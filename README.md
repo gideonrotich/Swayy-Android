@@ -1,10 +1,4 @@
 <p align="center">
-	<img
-		width="100"
-		alt="Logo"
-		
-
-
 ">![mbona](https://user-images.githubusercontent.com/63802031/123821864-702c9a80-d904-11eb-9c55-e0b0ca49c47c.png)
 </p>
 
