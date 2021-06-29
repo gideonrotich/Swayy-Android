@@ -52,7 +52,7 @@ Used for messaging.
 
 
 ## Download
- /home/giddy/AndroidStudioProjects/Swayy/app/build/outputs/apk/debug/app-debug.apk
+ [apk]"https://github.com/GideonRotich/Swayy-Android/blob/master/release/app-debug.apk"
 <a href='https://play.google.com/store/apps/details?id=com.example.swayy'>
 ​    <img alt='Get it on Google Play' 
 ​         src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'
