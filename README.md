@@ -1,12 +1,12 @@
 <p align="center">
 	<img
-		width="200"
+		width="150"
 		alt="Logo"
 		src="https://user-images.githubusercontent.com/63802031/123824597-dca89900-d906-11eb-88a2-3ad50f8dbc10.png">
 </p>
 
 
-# swayy
+# swayy - Buy and sell
 [![Build Status](https://app.bitrise.io/app/c373b1aa540acc1c/status.svg?token=u-KpJIBnS_0TQUtBtYNEJQ&branch=master)](https://app.bitrise.io/app/c373b1aa540acc1c)
 [![Playstore](https://img.shields.io/badge/Download-Playstore-brightgreen.svg)](https://play.google.com/store/apps/details?id=com.marknkamau.justjava)
 [![latest build](https://img.shields.io/badge/Download-Latest%20build-brightgreen.svg)](https://barbet.marknjunge.com/justjava)
