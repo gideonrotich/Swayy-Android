@@ -51,10 +51,6 @@ Used for messaging.
 
 
 
-## Download
- [apk](https://github.com/GideonRotich/Swayy-Android/blob/master/release/app-debug.apk)
-<a href='https://play.google.com/store/apps/details?id=com.example.swayy'>
-​    <img alt='Get it on Google Play' 
-​         src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'
-​         height="116" width="300"/>
-</a>
+## Download Latest Version
+ [Download apk](https://drive.google.com/file/d/10PzNl39-5YfH2TpUI0ZMESl8fAh4nSnW/view?usp=sharing)
+
