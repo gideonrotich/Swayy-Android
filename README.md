@@ -1,16 +1,14 @@
 <p align="center">
 	<img
-		width="100"
+		width="150"
 		alt="Logo"
-		src="/images/just_java_logo.png">
+		src="https://user-images.githubusercontent.com/63802031/123824597-dca89900-d906-11eb-88a2-3ad50f8dbc10.png">
 </p>
 
-# swayy
-[![Build Status](https://app.bitrise.io/app/c373b1aa540acc1c/status.svg?token=u-KpJIBnS_0TQUtBtYNEJQ&branch=master)](https://app.bitrise.io/app/c373b1aa540acc1c)
-[![Playstore](https://img.shields.io/badge/Download-Playstore-brightgreen.svg)](https://play.google.com/store/apps/details?id=com.marknkamau.justjava)
-[![latest build](https://img.shields.io/badge/Download-Latest%20build-brightgreen.svg)](https://barbet.marknjunge.com/justjava)
 
-A buying and selling app.
+# Swayy - Buy and sell
+
+A buying and selling app made using kotlin.A user can create his/her own shop online to sell products.
 
 The backend is written using Kotlin. See [swayy-api](https://github.com/GideonRotich/Swayy-Android).
 
@@ -25,7 +23,7 @@ The backend is written using Kotlin. See [swayy-api](https://github.com/GideonRo
 - Picasso image library
 - Shimmer layout
 
-## Prerequisites
+## Prequisites
 
 ### Firebase Project
 
@@ -42,17 +40,20 @@ Used for messaging.
 3. Add the `play-services.json` file from firebase to `./app`.
 4. Open and build in Android Studio.
 
-(optional) To overwrite the API url in debug mode, add `debugApiBaseUrl="http://10.0.2.2:3000"` to
-local.properties. **Note:** If your url is not https, you will need to add it to
-[network_security_config.xml](./core/src/main/res/xml/network_security_config.xml)
 
 ## Screenshots
+![mimi](https://user-images.githubusercontent.com/63802031/123826890-d9161180-d908-11eb-87ae-8a93b6dbd676.jpg)
+
+
+
+
+
 
 
 
 ## Download
 
-<a href='https://play.google.com/store/apps/details?id=com.marknkamau.justjava'>
+<a href='https://play.google.com/store/apps/details?id=com.example.swayy'>
 ​    <img alt='Get it on Google Play' 
 ​         src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'
 ​         height="116" width="300"/>
