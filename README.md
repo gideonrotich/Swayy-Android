@@ -48,7 +48,7 @@ local.properties. **Note:** If your url is not https, you will need to add it to
 
 ## Screenshots
 
-(/images/mooja.png)
+
 
 ## Download
 
