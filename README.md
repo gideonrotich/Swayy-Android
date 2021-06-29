@@ -8,6 +8,7 @@
 
 # Swayy - Buy and sell
 ![code size](https://img.shields.io/github/languages/code-size/GideonRotich/Swayy-Android?style=plastic)
+[![](https://img.shields.io/badge/author-Gideon%20Rotich-green.svg?style=plastic)](https://github.com/GideonRotich)
 
 A buying and selling app made using kotlin.A user can create his/her own shop online to sell products.
 
