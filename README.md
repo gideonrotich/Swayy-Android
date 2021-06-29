@@ -2,7 +2,8 @@
 	<img
 		width="100"
 		alt="Logo"
-		src="![mbona](https://user-images.githubusercontent.com/63802031/123821550-2c399580-d904-11eb-80a3-9e53db724fd2.png)
+		![mbona](https://user-images.githubusercontent.com/63802031/123821708-4ffcdb80-d904-11eb-978c-3b9992ffe5d2.png)
+
 ">
 </p>
 
