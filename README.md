@@ -23,7 +23,7 @@ The backend is written using Kotlin. See [swayy-api](https://github.com/GideonRo
 - Picasso image library
 - Shimmer layout
 
-## Prerequisites
+## Prequisites
 
 ### Firebase Project
 
