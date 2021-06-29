@@ -1,5 +1,6 @@
 <p align="center">
-![mbona](https://user-images.githubusercontent.com/63802031/123821864-702c9a80-d904-11eb-9c55-e0b0ca49c47c.png)
+![mbona](https://user-images.githubusercontent.com/63802031/123822256-cac5f680-d904-11eb-8f0d-8fa0d1ce0634.png)
+
 </p>
 
 # swayy
