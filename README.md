@@ -8,7 +8,7 @@
 
 # Swayy - Buy and sell
 
-A buying and selling app made using kotlin.A user can create his/her on shop online to sell products.
+A buying and selling app made using kotlin.A user can create his/her own shop online to sell products.
 
 The backend is written using Kotlin. See [swayy-api](https://github.com/GideonRotich/Swayy-Android).
 
