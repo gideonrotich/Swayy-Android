@@ -20,7 +20,7 @@ class MamboActivity : AppCompatActivity() {
     private var mGameIsInProgress = false
     private var mAdIsLoading: Boolean = false
     private var mTimerMilliseconds = 0L
-    private var TAG = "MainActivity"
+    private var TAG = "MamboActivity"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
