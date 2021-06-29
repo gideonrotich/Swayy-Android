@@ -1,7 +1,10 @@
 <p align="center">
-![mbona](https://user-images.githubusercontent.com/63802031/123822256-cac5f680-d904-11eb-8f0d-8fa0d1ce0634.png)
+	<img
+		width="100"
+		alt="Logo"
+		src="/images/just_java_logo.png">
+</p>![mbona](https://user-images.githubusercontent.com/63802031/123824597-dca89900-d906-11eb-88a2-3ad50f8dbc10.png)
 
-</p>
 
 # swayy
 [![Build Status](https://app.bitrise.io/app/c373b1aa540acc1c/status.svg?token=u-KpJIBnS_0TQUtBtYNEJQ&branch=master)](https://app.bitrise.io/app/c373b1aa540acc1c)
