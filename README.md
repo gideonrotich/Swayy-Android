@@ -48,7 +48,8 @@ local.properties. **Note:** If your url is not https, you will need to add it to
 [network_security_config.xml](./core/src/main/res/xml/network_security_config.xml)
 
 ## Screenshots
-![umebadilika](https://user-images.githubusercontent.com/63802031/123826757-bb48ac80-d908-11eb-8f67-ce0b15ca0dc5.jpg)
+![mimi](https://user-images.githubusercontent.com/63802031/123826890-d9161180-d908-11eb-87ae-8a93b6dbd676.jpg)
+
 
 
 
