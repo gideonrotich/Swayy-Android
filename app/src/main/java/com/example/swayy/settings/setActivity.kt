@@ -47,7 +47,7 @@ class setActivity : AppCompatActivity() {
         smithrowc.setOnClickListener {
             val sendIntent: Intent = Intent().apply {
                 action = Intent.ACTION_SEND
-                putExtra(Intent.EXTRA_TEXT, "Download the swayy app\n https://play.google.com/store/apps/details?id=cn.swayy")
+                putExtra(Intent.EXTRA_TEXT, "Download the swayy app\n https://play.google.com/store/apps/details?id=cn.swayy-kenya")
                 type = "text/plain"
 
 
