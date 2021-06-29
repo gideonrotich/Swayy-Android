@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F3F3F3"
+    android:id="@+id/nyamaza"
+    tools:context=".categories.saledetailFragment">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mbappe"
+        android:elevation="2dp">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:background="#ffffff">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/yes">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:id="@+id/opt"
+                android:layout_height="22dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:layout_marginLeft="4dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="14dp"
+                android:tint="#000000"
+                android:backgroundTint="#ffffff"
+                >
+
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item details"
+                android:layout_toRightOf="@id/opt"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:id="@+id/rosa"
+                android:maxLines="1"
+                android:maxWidth="210dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/giddy"
+                android:textSize="18sp">
+
+            </TextView>
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/tuma"
+                android:layout_marginRight="14dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="12dp"
+                android:tint="#000000"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_baseline_share_24">
+
+            </ImageView>
+
+        </RelativeLayout>
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/minanyango"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_above="@id/bahati"
+            android:text="You need to login first so as to see the item details">
+
+        </TextView>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bahati"
+            android:backgroundTint="#4267B2"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:textAllCaps="false"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="20dp"
+            android:text="Sign in" />
+
+        <LinearLayout
+            android:id="@+id/llSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/bahati"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/textView26"
+                style="@style/AppTheme.Text.14Primary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Don't have an account?" />
+
+            <TextView
+                android:id="@+id/textView28"
+                style="@style/AppTheme.Text.14AccentBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:text="Sign up"
+                android:layout_marginLeft="4dp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mbappe"
+        android:id="@+id/mina"
+        android:visibility="visible"
+        android:scrollbars="none">
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/cavani"
+        android:layout_below="@id/mbappe">
+<!--        <com.denzcoskun.imageslider.ImageSlider-->
+<!--            android:id="@+id/image_slider"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="400dp"-->
+<!--            app:iss_auto_cycle="true"-->
+<!--            app:iss_period="4000"-->
+<!--            app:iss_delay="0"/>-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/mawazo"
+            android:scaleType="centerCrop"
+            android:background="#ffffff">
+
+        </ImageView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:id="@+id/pogbaboom"
+        android:layout_below="@id/cavani">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="16GB Memory SD High Speed Card,Get Earphone Gift"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:id="@+id/kisumu"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Condition: New "
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_below="@id/kisumu"
+            android:id="@+id/kiamunyi"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/likes"
+            android:layout_marginTop="17dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/kisumu"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="40dp"
+            >
+
+        </TextView>
+
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@+id/kisumu"
+            android:id="@+id/pichalike"
+            android:layout_toLeftOf="@id/likes"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_likeone">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/mombasa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kiamunyi"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Type : Annov"
+            android:textColor="#000000"
+            android:textSize="16sp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="KSH 399"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+
+            android:textStyle="bold"
+            android:layout_below="@id/mombasa"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/nakuru"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
+
+        </TextView>
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="7dp"
+
+            android:layout_below="@id/mombasa"
+            android:layout_toLeftOf="@id/litein"
+            android:id="@+id/messi"
+            android:src="@drawable/ic_baseline_location_on_24">
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Nairobi"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_alignParentRight="true"
+
+            android:layout_below="@id/mombasa"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/litein"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="10dp">
+
+        </TextView>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mmj"
+        android:background="#ffffff"
+        android:id="@+id/mata"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:id="@+id/rashford"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:text="The Rolls-Royce Cullinan is a full-sized luxury sport utility vehicle (SUV) produced by Rolls-Royce Motor Cars. The Cullinan is the first SUV to be launched by the Rolls-Royce marque, and is also the brand's first all-wheel drive vehicle.">
+
+        </TextView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/mmj"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/pogbaboom"
+        android:background="#F3F3F3">
+
+        <Button
+            android:id="@+id/fai"
+            android:backgroundTint="#000000"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="10dp"
+            android:text="Call"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="20dp" />
+        <Button
+            android:id="@+id/faid"
+            android:backgroundTint="#3DA62A"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/fai"
+            android:layout_marginEnd="20dp"
+            android:text="Whatsapp"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:layout_marginRight="20dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_newmessage"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="12dp"
+            android:visibility="gone"
+            android:layout_below="@+id/faid">
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="100dp"
+               android:layout_below="@id/mata"
+               android:layout_marginTop="20dp"
+               android:id="@+id/kind"
+               android:background="#ffffff">
+
+               <de.hdodenhof.circleimageview.CircleImageView
+                   android:layout_width="64dp"
+                   android:layout_height="64dp"
+                   app:civ_border_color="@color/giddy"
+                   app:civ_border_width="1dp"
+                   android:layout_marginTop="20dp"
+                   android:id="@+id/prom"
+                   android:layout_marginLeft="20dp">
+
+               </de.hdodenhof.circleimageview.CircleImageView>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_toRightOf="@id/prom"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginLeft="10dp"
+                   android:text="Username"
+                   android:id="@+id/promone"
+                   android:textStyle="bold"
+                   android:textColor="#000000"
+                   >
+
+               </TextView>
+               <ImageView
+                   android:layout_width="20dp"
+                   android:layout_height="16dp"
+                   android:src="@drawable/ic_check"
+                   android:layout_marginTop="21dp"
+                   android:layout_toRightOf="@id/promone"
+                   android:layout_marginLeft="1dp"
+                   >
+
+               </ImageView>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/promone"
+                   android:layout_toRightOf="@id/prom"
+                   android:layout_marginTop="2dp"
+                   android:layout_marginLeft="10dp"
+                   android:text="Verified: Yes"
+                   android:id="@+id/promtwo"
+                   android:textColor="#000000"
+                   >
+
+               </TextView>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/promtwo"
+                   android:layout_toRightOf="@id/prom"
+                   android:layout_marginTop="2dp"
+                   android:layout_marginLeft="10dp"
+                   android:text="Last seen: Recently"
+                   android:id="@+id/promtree"
+                   android:textColor="#000000"
+                   >
+
+               </TextView>
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/kind"
+               android:id="@+id/zamani"
+               android:background="#ffffff"
+               android:layout_marginTop="20dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp">
+
+               <com.google.android.material.textfield.TextInputLayout
+                   android:id="@+id/tilEmailzam"
+                   style="@style/AppTheme.InputField"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="16dp"
+                   android:layout_marginTop="16dp"
+                   android:layout_marginRight="16dp"
+                   android:hint="Comment">
+
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:id="@+id/etEmailzam"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:inputType="textEmailAddress"
+                       android:textSize="14sp" />
+               </com.google.android.material.textfield.TextInputLayout>
+
+               <com.google.android.material.button.MaterialButton
+                   android:id="@+id/btnSignInzam"
+                   android:backgroundTint="@color/giddy"
+                   android:layout_width="match_parent"
+                   android:layout_height="56dp"
+                   android:layout_below="@+id/tilEmailzam"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginTop="12dp"
+                   android:layout_marginRight="20dp"
+                   android:textAllCaps="false"
+                   android:layout_marginBottom="4dp"
+                   android:text="Post Comment"
+                   />
+               <androidx.recyclerview.widget.RecyclerView
+                   android:id="@+id/recycler_view_comments"
+                   android:layout_width="match_parent"
+                   android:scrollbars="none"
+
+                   android:layout_below="@id/btnSignInzam"
+                   android:layout_height="wrap_content"
+                   android:visibility="visible"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginRight="10dp"
+                   android:layout_marginBottom="10dp">
+
+               </androidx.recyclerview.widget.RecyclerView>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="View all comments"
+                   android:textSize="16sp"
+                   android:id="@+id/meddy"
+                   android:textColor="@color/giddy"
+                   android:layout_below="@id/recycler_view_comments"
+                   android:layout_centerHorizontal="true"
+                   android:layout_marginBottom="10dp">
+
+               </TextView>
+           </RelativeLayout>
+
+
+           <com.google.android.material.button.MaterialButton
+               style="@style/AppTheme.Button.OutlinedAccent"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Post Ad like this"
+               android:layout_centerHorizontal="true"
+               android:textSize="16sp"
+               android:id="@+id/accnade"
+                android:textAllCaps="false"
+               android:layout_below="@id/zamani"
+               android:layout_marginTop="20dp"
+               android:layout_marginLeft="20dp"
+               android:layout_marginRight="20dp"
+               >
+
+           </com.google.android.material.button.MaterialButton>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/accnade"
+               android:layout_marginTop="20dp"
+               android:layout_marginLeft="10dp"
+               android:text="Similar Ads"
+               android:textStyle="bold"
+               android:id="@+id/otile"
+               android:textSize="14sp">
+
+           </TextView>
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/recycler_view_ml"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/otile"
+               android:layout_marginTop="10dp"
+               android:visibility="visible"
+
+               android:layout_marginBottom="80dp">
+
+           </androidx.recyclerview.widget.RecyclerView>
+
+
+
+       </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

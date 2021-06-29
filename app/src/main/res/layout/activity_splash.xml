@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    tools:context=".SplashActivity">
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+       android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        app:lottie_fileName="nne.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true">
+
+    </com.airbnb.lottie.LottieAnimationView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="Version 2.3.0"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+        android:textSize="11sp"
+        android:textColor="#555454">
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="14dp"
+        android:layout_centerHorizontal="true"
+        android:text=" @Swayylimited2021"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+        android:textSize="12sp"
+        android:textColor="#555454">
+
+    </TextView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "80158833419",
+    "project_id": "swayy-8df68",
+    "storage_bucket": "swayy-8df68.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:80158833419:android:e8b8e62a4cff1ce1c1400e",
+        "android_client_info": {
+          "package_name": "com.example.swayy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "80158833419-q252d83canq16gvcqcm03g15geessiom.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACoF9BMki2G_pY_Virh3Bft7XEcKaEljk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "80158833419-q252d83canq16gvcqcm03g15geessiom.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

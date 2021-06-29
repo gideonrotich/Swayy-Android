@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="giddy">#4267B2</color>
+    <color name="giddyme">#000000</color>
+    <color name="shimmer">#C4CBCF</color>
+    <color name="shimmertop">#D1D3D3</color>
+    <color name="mkalee">#4267B2</color>
+    <color name="cardi">#F3F4F4</color>
+
+    //
+    <color name="colorPrimaryLight">#946D66</color>
+    <color name="colorPrimary">#4F332E</color>
+    <color name="colorPrimaryDark">#3E2723</color>
+    <color name="colorAccent">#F57C00</color>
+    <color name="colorTextPrimary">#212121</color>
+    <color name="colorTextSecondary">#757575</color>
+    <color name="colorTextTertiary">#E0E0E0</color>
+    <color name="colorDisabled">#CCCCCC</color>
+    <color name="colorDisabledText">#888888</color>
+    <color name="colorDanger">#E53E3E</color>
+
+    <color name="colorOrderPendingText">#333333</color>
+    <color name="colorOrderPending">#DEDEDE</color>
+    <color name="colorOrderConfirmedText">#D8801C</color>
+    <color name="colorOrderConfirmed">#F9EBDA</color>
+    <color name="colorOrderInProgressText">#28549F</color>
+    <color name="colorOrderInProgress">#DCE3F0</color>
+    <color name="colorOrderCompletedText">#2D5D36</color>
+    <color name="colorOrderCompleted">#DDE5DE</color>
+    <color name="colorOrderCancelledText">#A51D1D</color>
+    <color name="colorOrderCancelled">#F1DADA</color>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_nyumba"
+        android:iconTint="#000000"
+        android:title="@string/title_home" />
+    <item
+        android:id="@+id/navigation_not"
+        android:icon="@drawable/ic_bag"
+        android:iconTint="#ffffff"
+        android:title="Shops" />
+
+    <item
+        android:id="@+id/navigation_sell"
+        android:icon="@drawable/ic_ada"
+        android:title="Sell" />
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_love"
+        android:title="Favorite"/>
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_usa"
+        android:title="Profile" />
+
+</menu>

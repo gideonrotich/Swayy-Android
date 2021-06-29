@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".favoriteFragment">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mbappe"
+        android:elevation="2dp">
+
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:background="#ffffff">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/yes">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Favorites"
+                    android:layout_marginLeft="30dp"
+                    android:textStyle="bold"
+                    android:id="@+id/rosal"
+                    android:maxLines="1"
+                    android:maxWidth="250dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="12dp"
+                    android:textColor="@color/giddy"
+                    android:textSize="18sp">
+
+                </TextView>
+
+            </RelativeLayout>
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/minanyangoo"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_above="@id/bahatio"
+            android:text="You need to login first so as to see your saved items">
+
+        </TextView>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bahatio"
+            android:backgroundTint="#4267B2"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:textAllCaps="false"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="20dp"
+            android:text="Sign in" />
+
+        <LinearLayout
+            android:id="@+id/llSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/bahatio"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/textView26"
+                style="@style/AppTheme.Text.14Primary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Don't have an account?" />
+
+            <TextView
+                android:id="@+id/textView28o"
+                style="@style/AppTheme.Text.14AccentBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:text="Sign up"
+                android:layout_marginLeft="4dp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mbappe"
+        android:visibility="gone"
+        android:id="@+id/cocoone"
+        >
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="260dp"
+            android:id="@+id/like"
+            android:layout_marginTop="80dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_notfound"
+            >
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/like"
+            android:layout_marginTop="12dp"
+            android:text="You have no saved products"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        android:layout_below="@+id/mbappe"
+        android:layout_marginBottom="59dp"
+        android:orientation="vertical">
+
+        <!-- Adding 15 rows of placeholders -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/shimmer_placeholder_layout" />
+            <include layout="@layout/shimmer_placeholder_layout" />
+            <include layout="@layout/shimmer_placeholder_layout" />
+
+
+
+
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="300dp"
+        android:id="@+id/naneanimation"
+        android:layout_height="150dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+         app:lottie_fileName="nane.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true">
+
+    </com.airbnb.lottie.LottieAnimationView>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_electronics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_below="@id/mbappe"
+        android:layout_marginBottom="10dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

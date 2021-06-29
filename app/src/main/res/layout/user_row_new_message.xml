@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/ic_rectangle_loginblue"
+    android:layout_height="40dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:id="@+id/linear_list"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="48dp"
+            android:layout_height="66dp"
+            android:src="@drawable/twoo"
+            android:id="@+id/image_list"
+            android:visibility="gone"
+            android:layout_marginLeft="20dp">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FullName"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:id="@+id/username_textview"
+            android:layout_marginTop="21sp"
+            android:layout_marginLeft="12dp"
+            >
+
+        </TextView>
+        <TextView
+            android:id="@+id/faidodo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Chat"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:gravity="center_horizontal">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

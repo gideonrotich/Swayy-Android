@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="64dp"
+        android:layout_marginTop="14dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="14dp"
+        android:id="@+id/imageview_latest_message"
+        android:src="@drawable/twoo">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@+id/imageview_latest_message"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/username_textview_latest_message"
+        android:textColor="@android:color/black"
+        android:layout_toRightOf="@+id/imageview_latest_message">
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:padding="4dp"
+        android:maxLines="1"
+        android:textSize="14sp"
+        android:layout_below="@id/username_textview_latest_message"
+        android:layout_toEndOf="@+id/imageview_latest_message"
+        android:layout_marginLeft="4dp"
+        android:id="@+id/message_textview_latest_message"
+        android:textColor="@color/colorDisabledText"
+        android:layout_toRightOf="@+id/imageview_latest_message">
+
+    </TextView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/imageview_latest_message"
+        android:background="#DFDBDB"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/imageview_latest_message">
+
+    </View>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".notificationsFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mbappe"
+        android:elevation="2dp">
+
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:background="#ffffff">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/yes">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shops"
+                    android:layout_marginLeft="30dp"
+                    android:textStyle="bold"
+                    android:id="@+id/rosal"
+                    android:maxLines="1"
+                    android:maxWidth="250dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="12dp"
+                    android:textColor="@color/giddy"
+                    android:textSize="18sp">
+
+                </TextView>
+
+            </RelativeLayout>
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_below="@id/mbappe">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/createshop"
+
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/mbappe"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:text="Create a Shop"
+        android:backgroundTint="@color/giddy"
+        android:textColor="#FFFFFF" />
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:visibility="visible"
+        android:layout_below="@+id/createshop"
+        android:layout_marginBottom="59dp"
+        android:orientation="vertical">
+
+        <!-- Adding 15 rows of placeholders -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/shimmer_placeholder_layout" />
+            <include layout="@layout/shimmer_placeholder_layout" />
+            <include layout="@layout/shimmer_placeholder_layout" />
+
+
+
+
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/createshop">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Electronics Stores"
+            android:textSize="18sp"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/molo"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            >
+
+        </TextView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_dukam"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@+id/molo"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home and Living Stores"
+            android:textSize="18sp"
+            android:layout_below="@id/recycler_view_dukam"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/moloone"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            >
+
+        </TextView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_dukamone"
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_below="@+id/moloone"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accomodation and Travel Stores"
+            android:textSize="18sp"
+            android:layout_below="@id/recycler_view_dukamone"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/molotravel"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            >
+
+        </TextView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_dukatravel"
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_below="@+id/molotravel"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service Providers"
+            android:textSize="18sp"
+            android:layout_below="@id/recycler_view_dukatravel"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/moloprovide"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            >
+
+        </TextView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_dukaprovide"
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_below="@+id/moloprovide"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Dealers"
+            android:textSize="18sp"
+            android:layout_below="@id/recycler_view_dukaprovide"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/molocar"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            >
+
+        </TextView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_dukacar"
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_below="@+id/molocar"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile phone Stores"
+            android:textSize="18sp"
+            android:layout_below="@id/recycler_view_dukacar"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/molophone"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            >
+
+        </TextView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_dukaphone"
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_below="@+id/molophone"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fashion Stores"
+            android:textSize="18sp"
+            android:layout_below="@id/recycler_view_dukaphone"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/molofashion"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            >
+
+        </TextView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_dukafashion"
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_below="@+id/molofashion"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="General Stores"
+            android:textSize="18sp"
+            android:layout_below="@id/recycler_view_dukafashion"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/mologeneral"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            >
+
+        </TextView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_dukageneral"
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_below="@+id/mologeneral"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="300dp"
+        android:id="@+id/naneanimation"
+        android:layout_height="150dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        app:lottie_fileName="nane.json"
+        app:lottie_loop="true"
+       app:lottie_autoPlay="true">
+
+    </com.airbnb.lottie.LottieAnimationView>
+</RelativeLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Search.SearchFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mbappe"
+        android:background="#ffffff"
+        android:elevation="2dp">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:id="@+id/optomewk"
+                    android:tint="#000000"
+                    android:layout_height="24dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="14dp"
+                    android:src="@drawable/ic_baseline_arrow_back_24"
+                    android:backgroundTint="@android:color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select item category"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/optomewk"
+                    android:layout_marginLeft="20dp">
+
+                </TextView>
+                <ImageView
+                    android:layout_width="50dp"
+                    android:id="@+id/optos"
+                    android:tint="#000000"
+                    android:layout_centerVertical="true"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="14dp"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_niaje"
+                    android:backgroundTint="@android:color/white"
+                    >
+
+                </ImageView>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/cardi"
+        android:layout_below="@+id/mbappe">
+
+        <TextView
+            android:id="@+id/haha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Category"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/giddy"
+            android:layout_marginLeft="20dp">
+
+        </TextView>
+
+        <Spinner
+            android:id="@+id/kcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/haha"
+            android:textSize="16sp"
+            android:spinnerMode="dropdown"
+            android:textColor="#ffffff"
+            android:background="#ffffff"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="24dp">
+
+        </Spinner>
+        <TextView
+            android:id="@+id/wapionemama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kcome"
+            android:text="klsdkldsk"
+            android:textColorHint="@android:color/black"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="8dp">
+
+        </TextView>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnnextfashion_mecan"
+            android:backgroundTint="@color/giddy"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:visibility="visible"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="10dp"
+            android:textAllCaps="false"
+            android:layout_below="@+id/wapionemama"
+            android:layout_marginRight="20dp"
+            android:text="Next" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnnextfashion_mecan"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Your recent search"
+            android:textSize="16sp"
+            android:id="@+id/money"
+            android:visibility="gone"
+            android:textStyle="bold">
+        </TextView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_money"
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_below="@+id/money"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+
+</RelativeLayout>

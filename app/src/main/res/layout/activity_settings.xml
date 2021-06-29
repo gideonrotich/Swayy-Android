@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".stores.settingsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mbappe"
+        android:background="#ffffff"
+        android:elevation="2dp">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:id="@+id/optomewk"
+                    android:tint="#000000"
+                    android:layout_height="24dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="14dp"
+                    android:src="@drawable/ic_baseline_arrow_back_24"
+                    android:backgroundTint="@android:color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Shop"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/optomewk"
+                    android:layout_marginLeft="20dp">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update"
+                    android:id="@+id/tz"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="20dp">
+
+                </TextView>
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mbappe">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/dpz"
+            android:elevation="2dp"
+            android:layout_marginLeft="20dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/pichakampunioo"
+                android:background="#BFAACA"
+                >
+
+            </ImageView>
+
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/dpz"
+            android:layout_marginLeft="20dp"
+            android:text="Change Logo"
+            android:id="@+id/badilisha"
+            android:layout_marginTop="30dp"
+            android:textColor="#000000"
+            android:textSize="16sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textViewz"
+            style="@style/AppTheme.Text.18Primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textSize="18sp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/dpz"
+            android:text="Shop Details"
+            android:layout_marginLeft="20dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilFirstNameshop"
+            style="@style/AppTheme.InputField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_below="@id/textViewz"
+            android:layout_marginEnd="16dp"
+            android:hint="Shop Title"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etFirstNameonesh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:inputType="textPersonName|textCapWords"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilFirstNameshopweb"
+            style="@style/AppTheme.InputField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/tilFirstNameshop"
+            android:layout_marginEnd="16dp"
+            android:hint="Shop Website"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etFirstNameoneshweb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:inputType="textPersonName|textCapWords"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilFirstNameshoploc"
+            style="@style/AppTheme.InputField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/tilFirstNameshopweb"
+            android:layout_marginEnd="16dp"
+            android:hint="Shop Location"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etFirstNameoneshloc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:inputType="textPersonName|textCapWords"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilFirstNameshopdes"
+            style="@style/AppTheme.InputField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/tilFirstNameshoploc"
+            android:layout_marginEnd="16dp"
+            android:hint="Shop Description"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etFirstNameoneshdes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:inputType="textPersonName|textCapWords"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btntoa"
+            android:backgroundTint="#DC1818"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:textAllCaps="false"
+            android:layout_below="@+id/tilFirstNameshopdes"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:text="Delete Shop" />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".stores.NunuadetailFragment">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mbappe"
+        android:elevation="2dp">
+
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:background="#ffffff">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/yes">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:id="@+id/opt"
+                    android:layout_height="22dp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/ic_baseline_arrow_back_24"
+                    android:layout_marginLeft="4dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="14dp"
+                    android:tint="#000000"
+                    android:backgroundTint="#ffffff"
+                    >
+
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Item details"
+                    android:layout_toRightOf="@id/opt"
+                    android:layout_marginLeft="20dp"
+                    android:textStyle="bold"
+                    android:id="@+id/rosal"
+                    android:maxLines="1"
+                    android:maxWidth="210dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="12dp"
+                    android:textColor="@color/giddy"
+                    android:textSize="18sp">
+
+                </TextView>
+
+            </RelativeLayout>
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mbappe"
+        android:scrollbars="none">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:id="@+id/cavanil"
+                android:layout_below="@id/mbappe">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/mawazol"
+                    android:scaleType="centerCrop"
+                    android:background="#ffffff">
+
+                </ImageView>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:id="@+id/pogbabooml"
+                android:layout_below="@id/cavanil">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="16GB Memory SD High Speed Card,Get Earphone Gift"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:id="@+id/kisumul"
+                    android:maxLines="1"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Condition: New "
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_below="@id/kisumul"
+                    android:id="@+id/kiamunyil"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/likesl"
+                    android:layout_marginTop="17dp"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@android:color/black"
+                    android:layout_below="@id/kisumul"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="40dp"
+                    >
+
+                </TextView>
+
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@+id/kisumul"
+                    android:id="@+id/pichalikel"
+                    android:layout_toLeftOf="@id/likesl"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/ic_likeone">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/mombasal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/kiamunyil"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Type : Annov"
+                    android:textColor="#000000"
+                    android:textSize="16sp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="KSH 399"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"
+
+                    android:textStyle="bold"
+                    android:layout_below="@id/mombasal"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/nakurul"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp">
+
+                </TextView>
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="7dp"
+
+                    android:layout_below="@id/mombasal"
+                    android:layout_toLeftOf="@id/liteinl"
+                    android:id="@+id/messil"
+                    android:src="@drawable/ic_baseline_location_on_24">
+
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Nairobi"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_alignParentRight="true"
+
+                    android:layout_below="@id/mombasal"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/liteinl"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="10dp">
+
+                </TextView>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mmjl"
+                android:background="#ffffff"
+                android:id="@+id/matal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="15sp"
+                    android:padding="10dp"
+                    android:id="@+id/rashfordl"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"
+                    android:text="The Rolls-Royce Cullinan is a full-sized luxury sport utility vehicle (SUV) produced by Rolls-Royce Motor Cars. The Cullinan is the first SUV to be launched by the Rolls-Royce marque, and is also the brand's first all-wheel drive vehicle.">
+
+                </TextView>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/mmjl"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/pogbabooml"
+                android:background="#F3F3F3">
+
+                <Button
+                    android:id="@+id/fail"
+                    android:backgroundTint="#000000"
+                    android:layout_width="160dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:text="Call"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:layout_marginLeft="20dp" />
+                <Button
+                    android:id="@+id/faidl"
+                    android:backgroundTint="#3DA62A"
+                    android:layout_width="160dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@id/fail"
+                    android:layout_marginEnd="20dp"
+                    android:text="Whatsapp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:layout_marginRight="20dp" />
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/matal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:id="@+id/kindl"
+                android:background="#F3F3F3">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                   app:civ_border_color="@color/giddy"
+                    app:civ_border_width="1dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/proml"
+                    android:background="@drawable/onee"
+                    android:layout_marginLeft="20dp">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/proml"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Username"
+                    android:id="@+id/promonel"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    >
+
+                </TextView>
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_check"
+                    android:layout_marginTop="21dp"
+                    android:layout_toRightOf="@id/promonel"
+                    android:layout_marginLeft="1dp"
+                    >
+
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/promonel"
+                    android:layout_toRightOf="@id/proml"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Verified: Yes"
+                    android:id="@+id/promtwol"
+                    android:textColor="#000000"
+                    >
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/promtwol"
+                    android:layout_toRightOf="@id/proml"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Last seen: Recently"
+                    android:id="@+id/promtreel"
+                    android:textColor="#000000"
+                    >
+
+                </TextView>
+            </RelativeLayout>
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/AppTheme.Button.OutlinedAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Post Ad like this"
+                android:layout_centerHorizontal="true"
+                android:textSize="16sp"
+                android:id="@+id/accnadel"
+                android:textAllCaps="false"
+                android:layout_below="@id/kindl"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                >
+
+            </com.google.android.material.button.MaterialButton>
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

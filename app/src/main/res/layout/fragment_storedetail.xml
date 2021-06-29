@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".stores.storedetailFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/minanyangol"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_above="@id/bahatii"
+            android:text="You need to login first so as to see the shop details">
+
+        </TextView>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bahatii"
+            android:backgroundTint="#4267B2"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:textAllCaps="false"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="20dp"
+            android:text="Sign in" />
+
+        <LinearLayout
+            android:id="@+id/llSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/bahatii"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/textView266"
+                style="@style/AppTheme.Text.14Primary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Don't have an account?" />
+
+            <TextView
+                android:id="@+id/textView288"
+                style="@style/AppTheme.Text.14AccentBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:text="Sign up"
+                android:layout_marginLeft="4dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/majira"
+        android:visibility="visible"
+        android:scrollbars="none">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/ni"
+        android:background="#000000">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/shine"
+            android:scaleType="centerCrop"
+            android:background="@color/giddy"
+            android:elevation="4dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/mbeya"
+                android:layout_marginRight="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:tint="#ffffff"
+                android:src="@drawable/ic_baseline_share_24">
+
+            </ImageView>
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/mbeyaz"
+                android:layout_marginRight="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:tint="#ffffff"
+                android:visibility="gone"
+                android:src="@drawable/ic_settings">
+
+            </ImageView>
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/mbeyam"
+                android:layout_marginLeft="16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:tint="#ffffff"
+                android:src="@drawable/ic_baseline_arrow_back_24">
+
+            </ImageView>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="50dp"
+                android:id="@+id/dp"
+                android:elevation="2dp"
+                android:layout_marginLeft="20dp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pichakampuni"
+        android:background="#BFAACA"
+        >
+
+    </ImageView>
+            </androidx.cardview.widget.CardView>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="110dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ali"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:id="@+id/ajed"
+                            android:textStyle="bold"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="22sp"
+                            android:textColor="#000000">
+
+                        </TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Posts"
+                            android:textColor="#333333"
+                            android:id="@+id/ajedno"
+                            android:textStyle="bold"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@id/ajed"
+                            android:textSize="12sp"
+                            >
+
+                        </TextView>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/aliha"
+                        android:layout_marginLeft="30dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:id="@+id/ajedm"
+                            android:textStyle="bold"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="22sp"
+                            android:textColor="#000000">
+
+                        </TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Followers"
+                            android:textColor="#333333"
+                            android:id="@+id/ajednom"
+                            android:textStyle="bold"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@id/ajedm"
+                            android:textSize="12sp"
+                            >
+
+                        </TextView>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/aliham"
+                        android:layout_marginLeft="30dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:id="@+id/ajedmm"
+                            android:textStyle="bold"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="22sp"
+                            android:textColor="#000000">
+
+                        </TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Following"
+                            android:textColor="#333333"
+                            android:id="@+id/ajednomm"
+                            android:textStyle="bold"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@id/ajedmm"
+                            android:textSize="12sp"
+                            >
+
+                        </TextView>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/jeje"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ps"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mamayao"
+                android:text="Safaricom PLC"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mamayao"
+                android:id="@+id/kamoja"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Website"
+                    android:textSize="16sp"
+                    android:id="@+id/web"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="www.jobmaster.com"
+                    android:id="@+id/webme"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="40dp"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kamoja"
+                android:id="@+id/kambili"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location"
+                    android:textSize="16sp"
+                    android:id="@+id/webkamoja"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chantilly, VA"
+                    android:id="@+id/webmek"
+                    android:textSize="16sp"
+                    android:layout_marginStart="40dp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kambili"
+                android:id="@+id/kadodo"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Created on"
+                    android:textSize="16sp"
+                    android:id="@+id/webkamojas"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chantilly, VA"
+                    android:id="@+id/webmeks"
+                    android:textSize="16sp"
+                    android:layout_marginStart="24dp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="1dp"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kadodo"
+                android:id="@+id/katatu"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textSize="16sp"
+                    android:id="@+id/websasa"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                </TextView>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/katatu"
+                android:id="@+id/kanne"
+                android:layout_marginTop="10dp"
+                >
+                <Button
+                    android:id="@+id/faiza"
+                    android:backgroundTint="@color/giddy"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Follow"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp" />
+                <Button
+                    android:id="@+id/faidoo"
+                    android:backgroundTint="#3DA62A"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@id/fai"
+                    android:layout_marginEnd="20dp"
+                    android:text="Message"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="10dp" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/kampww"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="18dp"
+                android:alpha=".12"
+                android:background="#000"
+                android:layout_below="@+id/kanne" />
+
+        </RelativeLayout>
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmerFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_below="@+id/ps"
+            android:layout_marginBottom="59dp"
+            android:orientation="vertical">
+
+            <!-- Adding 15 rows of placeholders -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/shimmer_placeholder_layout" />
+                <include layout="@layout/shimmer_placeholder_layout" />
+                <include layout="@layout/shimmer_placeholder_layout" />
+
+
+
+
+            </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_sasa"
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_below="@+id/ps"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginBottom="10dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

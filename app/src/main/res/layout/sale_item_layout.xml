@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F3F3F3"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="4dp"
+    android:layout_marginBottom="2dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginLeft="4dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="160dp"
+        android:layout_height="230dp"
+        android:layout_margin="4dp"
+        app:cardElevation="2dp"
+        >
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:id="@+id/dia"
+            android:scaleType="centerCrop"
+            >
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dia"
+            android:layout_marginTop="132dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="4dp"
+            android:id="@+id/diatext"
+            android:text="HP refurbished EliteBook -Corei5 - 500GB/4G RAM"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#000000">
+
+        </TextView>
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="152dp"
+
+            android:layout_below="@id/diatext"
+            android:id="@+id/messi"
+            android:src="@drawable/ic_baseline_location_on_24">
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/diatext"
+            android:layout_marginTop="160dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/messi"
+            android:layout_marginRight="4dp"
+            android:id="@+id/diatextlocation"
+            android:text="Nairobi"
+            android:textSize="13sp"
+            android:textColor="#000000">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/diatextlocation"
+            android:layout_marginTop="190dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:id="@+id/diatextprice"
+            android:textStyle="bold"
+            android:text="Ksh 25,000"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent">
+
+        </TextView>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="23dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="188dp"
+            android:layout_marginStart="120dp"
+
+            android:id="@+id/ukweli"
+            android:src="@drawable/ic_baseline_star_border_24"
+            android:tint="#6C6A6A"
+            android:layout_marginLeft="100dp">
+
+        </ImageView>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

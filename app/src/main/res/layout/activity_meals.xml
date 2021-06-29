@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".categories.mealsActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:id="@+id/mbappe"
+        android:background="#000000">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/yes"
+            ><TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post New Ad"
+            android:textSize="18sp"
+            android:layout_marginLeft="30dp"
+
+            android:textColor="#ffffff"
+            android:layout_marginTop="8dp"
+            >
+
+        </TextView>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mbappe">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/mbappe"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="14dp"
+                android:background="#ffffff"
+                android:layout_marginLeft="14dp"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Advert"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/kib">
+
+
+                </TextView>
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="18dp"
+                    android:alpha=".12"
+                    android:background="#000"
+                    android:layout_below="@+id/kib" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tititlefarm"
+                    style="@style/AppTheme.InputField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_below="@id/view3"
+                    android:layout_marginRight="16dp"
+                    android:hint="Title*">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etemailfarmmeals"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/password_confirm_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Type"
+                    android:textSize="16sp"
+
+                    android:layout_below="@+id/tititlefarm"
+                    android:layout_marginTop="12dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="20dp">
+
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/typefarmmeals"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/password_confirm_two"
+                    android:textSize="16sp"
+                    android:spinnerMode="dropdown"
+                    android:textColor="#ffffff"
+
+                    android:background="#F3F3F3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="4dp">
+
+                </Spinner>
+                <TextView
+                    android:id="@+id/tpespinfarmmeals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/typefarmmeals"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="8dp">
+
+                </TextView>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/subfarmlivestock"
+                    style="@style/AppTheme.InputField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_below="@id/tpespinfarmmeals"
+                    android:layout_marginRight="16dp"
+                    android:hint="Sub type*">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etfarmsublivestock"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/descfarmmeals"
+                    style="@style/AppTheme.InputField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_below="@id/subfarmlivestock"
+                    android:layout_marginRight="16dp"
+                    android:hint="Description*">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etfarmdescmeals"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/pricefarmmeals"
+                    style="@style/AppTheme.InputField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_below="@id/descfarmmeals"
+                    android:layout_marginRight="16dp"
+                    android:hint="Price*">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etpricefarmmeals"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberSigned"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/plus"
+                    app:civ_border_width="1dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@id/pricefarmmeals"
+                    android:id="@+id/profile_image_settingsmeals"
+                    >
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profile_image_settingsmeals"
+                    android:id="@+id/change_image_meals"
+                    android:layout_marginLeft="24dp"
+                    android:text="Add Image"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black">
+
+                </TextView>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/postfarmmeals"
+                    android:backgroundTint="#000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_below="@id/change_image_meals"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textAllCaps="false"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Post Item" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    tools:context=".ItemsaleActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mbappe"
+        android:elevation="2dp">
+
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:background="#ffffff">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/yes">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Post new Advert"
+                    android:layout_marginLeft="30dp"
+                    android:textStyle="bold"
+                    android:id="@+id/rosal"
+                    android:maxLines="1"
+                    android:maxWidth="250dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="12dp"
+                    android:textColor="@color/giddy"
+                    android:textSize="18sp">
+
+                </TextView>
+
+            </RelativeLayout>
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/minanyangor"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_above="@id/bahatir"
+            android:text="You need to login first so as to sell an item">
+
+        </TextView>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bahatir"
+            android:backgroundTint="#4267B2"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:textAllCaps="false"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="20dp"
+            android:text="Sign in" />
+
+        <LinearLayout
+            android:id="@+id/llSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/bahatir"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/textView26"
+                style="@style/AppTheme.Text.14Primary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Don't have an account?" />
+
+            <TextView
+                android:id="@+id/textView28r"
+                style="@style/AppTheme.Text.14AccentBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:text="Sign up"
+                android:layout_marginLeft="4dp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/mbappe"
+        android:visibility="visible"
+        android:id="@+id/minar"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="14dp"
+        android:background="#ffffff"
+        android:layout_marginLeft="14dp"
+        android:elevation="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Advert"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/kib">
+
+
+        </TextView>
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="18dp"
+            android:alpha=".12"
+            android:background="#000"
+            android:layout_below="@+id/kib" />
+
+        <TextView
+            android:id="@+id/password_confirm_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Category"
+            android:textSize="12sp"
+
+            android:layout_below="@+id/view3"
+            android:layout_marginTop="12dp"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="20dp">
+
+        </TextView>
+
+        <Spinner
+            android:id="@+id/techtextone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password_confirm_two"
+            android:textSize="16sp"
+            android:spinnerMode="dropdown"
+            android:textColor="#ffffff"
+
+            android:background="#F3F3F3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="4dp">
+
+        </Spinner>
+
+        <TextView
+            android:id="@+id/wapione"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/techtextone"
+            android:textColorHint="@android:color/black"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="8dp">
+
+        </TextView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnnext"
+            android:backgroundTint="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+android:visibility="gone"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/wapione"
+
+            android:layout_marginRight="20dp"
+            android:text="NEXT" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnnextanimals"
+            android:backgroundTint="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:visibility="gone"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/wapione"
+
+            android:layout_marginRight="20dp"
+            android:text="NEXT" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnnextbabies"
+            android:backgroundTint="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:visibility="gone"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/wapione"
+
+            android:layout_marginRight="20dp"
+            android:text="NEXT" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnnextequipment"
+            android:backgroundTint="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:visibility="gone"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/wapione"
+
+            android:layout_marginRight="20dp"
+            android:text="NEXT" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnnextelectronics"
+            android:backgroundTint="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:visibility="gone"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/wapione"
+
+            android:layout_marginRight="20dp"
+            android:text="NEXT" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnnextfashion"
+            android:backgroundTint="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:visibility="gone"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/wapione"
+
+            android:layout_marginRight="20dp"
+            android:text="NEXT" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnnexthealth"
+            android:backgroundTint="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:visibility="gone"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/wapione"
+
+            android:layout_marginRight="20dp"
+            android:text="NEXT" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnnextfurniture"
+            android:backgroundTint="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:visibility="gone"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/wapione"
+
+            android:layout_marginRight="20dp"
+            android:text="NEXT" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnnextjobs"
+            android:backgroundTint="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:visibility="gone"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/wapione"
+
+            android:layout_marginRight="20dp"
+            android:text="NEXT" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnnextmobile"
+            android:backgroundTint="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:visibility="gone"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/wapione"
+
+            android:layout_marginRight="20dp"
+            android:text="NEXT" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnnextproperty"
+            android:backgroundTint="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:visibility="gone"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/wapione"
+
+            android:layout_marginRight="20dp"
+            android:text="NEXT" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnnextrepair"
+            android:backgroundTint="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:visibility="gone"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/wapione"
+
+            android:layout_marginRight="20dp"
+            android:text="NEXT" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnnextseeking"
+            android:backgroundTint="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:visibility="gone"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/wapione"
+
+            android:layout_marginRight="20dp"
+            android:text="NEXT" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnnextservices"
+            android:backgroundTint="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:visibility="gone"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/wapione"
+
+            android:layout_marginRight="20dp"
+            android:text="NEXT" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnnextsports"
+            android:backgroundTint="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:visibility="gone"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/wapione"
+
+            android:layout_marginRight="20dp"
+            android:text="NEXT" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnnextvehicles"
+            android:backgroundTint="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:visibility="gone"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/wapione"
+
+            android:layout_marginRight="20dp"
+            android:text="NEXT" />
+    </RelativeLayout>
+
+</RelativeLayout>

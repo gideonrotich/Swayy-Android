@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settings.aboutActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:id="@+id/mbappe"
+        android:elevation="2dp"
+        android:background="@color/giddy">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/yes"
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:id="@+id/opt"
+                    android:layout_height="22dp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/ic_baseline_arrow_back_24"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="14dp"
+                    android:tint="#ffffff"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="#000000"
+                    >
+
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About Us"
+                    android:layout_toRightOf="@id/opt"
+                    android:layout_marginLeft="14dp"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="12dp"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp">
+
+                </TextView>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mbappe"
+        android:background="@color/giddy">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Swayy"
+            android:textSize="50sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:id="@+id/swa"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/swa"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:text="App version: 5.87.5"
+            android:textSize="16sp"
+            android:id="@+id/swat"
+            android:textColor="#ffffff">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/swat"
+            android:layout_marginTop="70dp"
+            android:id="@+id/swatt"
+            android:layout_centerHorizontal="true"
+            android:text="Follow us on social networks"
+            android:textSize="16sp"
+            android:textColor="#ffffff">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/swatt"
+            android:layout_marginTop="30dp"
+            android:id="@+id/fbi"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/ig"
+                android:src="@drawable/ic_instagram">
+
+            </ImageView>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/fb"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/ic_facebook">
+
+            </ImageView>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/tw"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/ic_twitter">
+
+            </ImageView>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fbi"
+            android:layout_marginTop="70dp"
+            android:id="@+id/fbir"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:text="Contact Us: support@swayy.co.ke"
+            android:textSize="16sp"
+            android:textColor="#ffffff">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fbir"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/swatto"
+            android:layout_centerHorizontal="true"
+            android:text="If you faced any problems while using our app,please try to clear the app data"
+            android:textSize="12sp"
+            android:textColor="#ffffff">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
