@@ -48,7 +48,8 @@ local.properties. **Note:** If your url is not https, you will need to add it to
 [network_security_config.xml](./core/src/main/res/xml/network_security_config.xml)
 
 ## Screenshots
-![Kition](https://user-images.githubusercontent.com/63802031/123823609-08774f00-d906-11eb-9c51-be1c279e0f4e.jpg)
+![umebadilika](https://user-images.githubusercontent.com/63802031/123825663-c4854980-d907-11eb-875f-3ded0ce3a216.jpg)
+
 
 
 
