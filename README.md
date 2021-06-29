@@ -2,7 +2,8 @@
 	<img
 		width="100"
 		alt="Logo"
-		src="/images/just_java_logo.png">
+		src="![mbona](https://user-images.githubusercontent.com/63802031/123821550-2c399580-d904-11eb-80a3-9e53db724fd2.png)
+">
 </p>
 
 # swayy
