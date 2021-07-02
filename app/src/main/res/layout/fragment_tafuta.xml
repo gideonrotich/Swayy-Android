@@ -32,6 +32,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Select item sub-category"
+                    android:fontFamily="@font/uber_move"
                     android:textSize="16sp"
                     android:textColor="#000000"
                     android:layout_centerVertical="true"
@@ -67,7 +68,7 @@
                 android:layout_height="wrap_content"
                 android:text="Item Category"
                 android:textSize="16sp"
-                android:textStyle="bold"
+                android:fontFamily="@font/uber_move_bold"
                 android:layout_marginTop="12dp"
                 android:textColor="@color/giddy"
                 android:layout_marginLeft="20dp">
@@ -345,6 +346,7 @@
             android:layout_marginLeft="20dp"
             android:visibility="visible"
             android:layout_marginTop="12dp"
+            android:fontFamily="@font/uber_move"
             android:layout_marginBottom="10dp"
             android:textAllCaps="false"
 

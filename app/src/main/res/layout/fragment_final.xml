@@ -43,7 +43,7 @@
                     android:text="Babies and kids"
                     android:layout_toRightOf="@id/opt"
                     android:layout_marginLeft="14dp"
-                    android:textStyle="bold"
+                    android:fontFamily="@font/uber_move_bold"
                     android:id="@+id/sawa"
                     android:layout_centerVertical="true"
                     android:layout_marginTop="12dp"

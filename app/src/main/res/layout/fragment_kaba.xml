@@ -32,6 +32,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Search item"
+                    android:fontFamily="@font/uber_move"
                     android:id="@+id/huaz"
                     android:layout_marginRight="20dp"
                     android:textSize="16sp"
@@ -59,11 +60,13 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
+            android:fontFamily="@font/uber_move"
             android:layout_marginRight="16dp"
             android:hint="Products,brands or title">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/hua"
+                android:fontFamily="@font/uber_move"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
@@ -77,6 +80,7 @@
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:textAllCaps="false"
+            android:fontFamily="@font/uber_move"
             android:layout_below="@id/huad"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="14dp"

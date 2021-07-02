@@ -44,7 +44,7 @@
                     android:text="Vehicles"
                     android:layout_toRightOf="@id/opt"
                     android:layout_marginLeft="14dp"
-                    android:textStyle="bold"
+                    android:fontFamily="@font/uber_move_bold"
                     android:layout_centerVertical="true"
                     android:layout_marginTop="12dp"
                     android:textColor="@color/giddy"
@@ -78,7 +78,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:text="Vehicle Parts and accessories"
-
+                android:fontFamily="@font/uber_move"
                 android:id="@+id/ronaldoa"
                 android:textColor="#000000"
                 android:layout_marginTop="16dp">
@@ -116,6 +116,7 @@
                 android:layout_marginTop="6dp"
                 android:layout_toRightOf="@id/pepe"
                 android:text="Cars"
+                android:fontFamily="@font/uber_move"
                 android:textColor="#000000">
 
             </TextView>
@@ -150,6 +151,7 @@
                 android:text="Buses and minibuses"
                 android:layout_toRightOf="@id/auba"
                 android:id="@+id/smitha"
+                android:fontFamily="@font/uber_move"
                 android:textColor="#000000"
                 android:layout_marginTop="6dp">
 
@@ -184,6 +186,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="6dp"
+                android:fontFamily="@font/uber_move"
                 android:layout_toRightOf="@id/carasco"
                 android:text="Trucks and trailers"
                 android:textColor="#000000">
@@ -219,6 +222,7 @@
                 android:text="Motorcyles and scooters"
                 android:layout_toRightOf="@id/carasco"
                 android:id="@+id/dimariamea"
+                android:fontFamily="@font/uber_move"
                 android:textColor="#000000"
                 android:layout_marginTop="6dp">
 
@@ -251,6 +255,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:text="Heavy equipment"
+                android:fontFamily="@font/uber_move"
                 android:layout_toRightOf="@id/carasco"
                 android:id="@+id/dimariayoua"
                 android:textColor="#000000"
@@ -285,6 +290,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:text="Watercraft and boats"
+                android:fontFamily="@font/uber_move"
                 android:layout_toRightOf="@id/carasco"
                 android:id="@+id/dimariawaoa"
                 android:textColor="#000000"

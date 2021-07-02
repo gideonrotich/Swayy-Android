@@ -36,9 +36,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Electronics"
+                android:fontFamily="@font/uber_move_bold"
                 android:layout_toRightOf="@id/opt"
                 android:layout_marginLeft="20dp"
-                android:textStyle="bold"
+
                 android:layout_marginTop="12dp"
                 android:textColor="#ffffff"
                 android:textSize="18sp">
@@ -68,7 +69,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:text="Accessories and supplies for electronics"
-
+                android:fontFamily="@font/uber_move"
                 android:id="@+id/ronaldocommz"
                 android:textColor="#000000"
                 android:layout_marginTop="16dp">
@@ -104,6 +105,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="6dp"
+                android:fontFamily="@font/uber_move"
                 android:layout_toRightOf="@id/pepe"
                 android:text="Audio and music equipment"
                 android:textColor="#000000">
@@ -140,6 +142,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_toRightOf="@id/auba"
                 android:text="Computer accessories"
+                android:fontFamily="@font/uber_move"
                 android:textColor="#000000">
 
             </TextView>
@@ -173,6 +176,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="6dp"
+                android:fontFamily="@font/uber_move"
                 android:layout_toRightOf="@id/carasco"
                 android:text="Computer Hardware"
                 android:textColor="#000000">
@@ -207,6 +211,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="6dp"
+                android:fontFamily="@font/uber_move"
                 android:layout_toRightOf="@id/carasco"
                 android:text="headphones"
                 android:textColor="#000000">
@@ -240,6 +245,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:text="laptops and computers"
+                android:fontFamily="@font/uber_move"
                 android:layout_toRightOf="@id/carasco"
                 android:id="@+id/dimariayoucommz"
                 android:textColor="#000000"
@@ -277,6 +283,7 @@
                 android:layout_marginTop="6dp"
                 android:layout_toRightOf="@id/carasco"
                 android:text="networking products"
+                android:fontFamily="@font/uber_move"
                 android:textColor="#000000">
 
             </TextView>
@@ -309,6 +316,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="6dp"
+                android:fontFamily="@font/uber_move"
                 android:layout_toRightOf="@id/carasco"
                 android:text="photo and video cameras"
                 android:textColor="#000000">
@@ -342,6 +350,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
+                android:fontFamily="@font/uber_move"
                 android:layout_marginTop="6dp"
                 android:layout_toRightOf="@id/carasco"
                 android:text="printers and scanners"
@@ -378,6 +387,7 @@
                 android:text="security and surveillance"
                 android:layout_toRightOf="@id/carasco"
                 android:id="@+id/dimariapsgcomwewemz"
+                android:fontFamily="@font/uber_move"
                 android:textColor="#000000"
                 android:layout_marginTop="6dp">
 
@@ -410,6 +420,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:text="software"
+                android:fontFamily="@font/uber_move"
                 android:layout_toRightOf="@id/carasco"
                 android:id="@+id/dimariapsgcomwewemzone"
                 android:textColor="#000000"
@@ -444,6 +455,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:text="tv and dvd equipment"
+                android:fontFamily="@font/uber_move"
                 android:layout_toRightOf="@id/carasco"
                 android:id="@+id/dimariapsgcomwewemztwo"
                 android:textColor="#000000"
@@ -478,6 +490,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:text="video game consoles"
+                android:fontFamily="@font/uber_move"
                 android:layout_toRightOf="@id/carasco"
                 android:id="@+id/dimariapsgcomwewemzthree"
                 android:textColor="#000000"
@@ -512,6 +525,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:text="video games"
+                android:fontFamily="@font/uber_move"
                 android:layout_toRightOf="@id/carasco"
                 android:id="@+id/dimariapsgcomwewemzfour"
                 android:textColor="#000000"

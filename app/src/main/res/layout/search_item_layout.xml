@@ -14,6 +14,8 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
+
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -21,6 +23,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginBottom="2dp"
             android:padding="4dp"
+            android:fontFamily="@font/uber_move"
             android:textColor="@color/giddy"
             android:id="@+id/mwao"
             android:layout_marginRight="2dp"

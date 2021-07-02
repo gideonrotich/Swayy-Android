@@ -45,7 +45,7 @@
                     android:text="Mobile phones and tablets"
                     android:layout_toRightOf="@id/opt"
                     android:layout_marginLeft="14dp"
-                    android:textStyle="bold"
+                    android:fontFamily="@font/uber_move_bold"
                     android:layout_centerVertical="true"
                     android:layout_marginTop="12dp"
                     android:textColor="@color/giddy"
@@ -77,7 +77,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:text="Accessories for mobile phones and tablets"
-
+android:fontFamily="@font/uber_move"
                 android:id="@+id/ronaldod"
                 android:textColor="#000000"
                 android:layout_marginTop="16dp">
@@ -115,6 +115,7 @@
                 android:layout_marginTop="6dp"
                 android:layout_toRightOf="@id/pepe"
                 android:text="Mobile phones"
+                android:fontFamily="@font/uber_move"
                 android:textColor="#000000">
 
             </TextView>
@@ -149,6 +150,7 @@
                 android:text="Smart watches and trackers"
                 android:layout_toRightOf="@id/auba"
                 android:id="@+id/smithd"
+                android:fontFamily="@font/uber_move"
                 android:textColor="#000000"
                 android:layout_marginTop="6dp">
 
@@ -185,6 +187,7 @@
                 android:layout_marginTop="6dp"
                 android:layout_toRightOf="@id/carasco"
                 android:text="Tablets"
+                android:fontFamily="@font/uber_move"
                 android:textColor="#000000">
 
             </TextView>

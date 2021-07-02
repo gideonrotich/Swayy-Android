@@ -118,6 +118,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Posts"
+                            android:fontFamily="@font/uber_move"
                             android:textColor="#333333"
                             android:id="@+id/ajedno"
                             android:textStyle="bold"
@@ -150,6 +151,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Followers"
+                            android:fontFamily="@font/uber_move"
                             android:textColor="#333333"
                             android:id="@+id/ajednom"
                             android:textStyle="bold"
@@ -182,6 +184,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Following"
+                            android:fontFamily="@font/uber_move"
                             android:textColor="#333333"
                             android:id="@+id/ajednomm"
                             android:textStyle="bold"
@@ -219,7 +222,7 @@
                         android:text="John doe"
                         android:textColor="#000000"
                         android:textSize="24sp"
-                        android:textStyle="bold"
+                        android:fontFamily="@font/uber_move_bold"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="6dp">
 
@@ -238,10 +241,11 @@
                             android:layout_height="wrap_content"
                             android:text="Phone Number"
                             android:textSize="16sp"
+                            android:fontFamily="@font/uber_move_bold"
                             android:id="@+id/webkamoja"
                             android:textColor="#000000"
                             android:layout_marginLeft="10dp"
-                            android:textStyle="bold">
+                            >
 
                         </TextView>
                         <TextView
@@ -249,6 +253,7 @@
                             android:layout_height="wrap_content"
                             android:text="Chantilly, VA"
                             android:id="@+id/webmeka"
+                            android:fontFamily="@font/uber_move"
                             android:textSize="16sp"
                             android:layout_marginStart="40dp"
                             android:textColor="#000000"
@@ -273,7 +278,7 @@
                             android:id="@+id/webkamojas"
                             android:textColor="#000000"
                             android:layout_marginLeft="10dp"
-                            android:textStyle="bold">
+                            android:fontFamily="@font/uber_move_bold">
 
                         </TextView>
                         <TextView
@@ -282,6 +287,7 @@
                             android:text="Chantilly, VA"
                             android:id="@+id/webmeksa"
                             android:textSize="16sp"
+                            android:fontFamily="@font/uber_move"
                             android:layout_marginStart="44dp"
                             android:textColor="#000000"
                             android:layout_marginLeft="1dp"
@@ -307,6 +313,7 @@
                             android:layout_marginTop="3dp"
                             android:layout_marginEnd="10dp"
                             android:text="Follow"
+                            android:fontFamily="@font/uber_move"
                             android:textAllCaps="false"
                             android:textColor="#ffffff"
                             android:layout_marginLeft="20dp"
@@ -321,6 +328,7 @@
                             android:layout_toRightOf="@id/fai"
                             android:layout_marginEnd="20dp"
                             android:text="Message"
+                            android:fontFamily="@font/uber_move"
                             android:textAllCaps="false"
                             android:textColor="#ffffff"
                             android:layout_marginRight="20dp"

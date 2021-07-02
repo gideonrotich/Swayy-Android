@@ -46,7 +46,7 @@
                 android:text="Item details"
                 android:layout_toRightOf="@id/opt"
                 android:layout_marginLeft="20dp"
-                android:textStyle="bold"
+                android:fontFamily="@font/uber_move_bold"
                 android:id="@+id/rosa"
                 android:maxLines="1"
                 android:maxWidth="210dp"
@@ -186,7 +186,7 @@
             android:textSize="16sp"
             android:id="@+id/kisumu"
             android:maxLines="1"
-            android:textStyle="bold"
+            android:fontFamily="@font/uber_move_bold"
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp">
 
@@ -198,6 +198,7 @@
             android:text="Condition: New "
             android:textColor="#000000"
             android:textSize="16sp"
+            android:fontFamily="@font/uber_move"
             android:layout_below="@id/kisumu"
             android:id="@+id/kiamunyi"
             android:layout_marginRight="10dp"
@@ -208,6 +209,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
+            android:fontFamily="@font/uber_move"
             android:id="@+id/likes"
             android:layout_marginTop="17dp"
             android:layout_alignParentRight="true"
@@ -241,6 +243,7 @@
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
             android:text="Type : Annov"
+            android:fontFamily="@font/uber_move"
             android:textColor="#000000"
             android:textSize="16sp">
 
@@ -254,7 +257,7 @@
             android:textColor="@color/colorAccent"
             android:textSize="18sp"
 
-            android:textStyle="bold"
+            android:fontFamily="@font/uber_move_bold"
             android:layout_below="@id/mombasa"
             android:layout_marginBottom="10dp"
             android:id="@+id/nakuru"
@@ -277,12 +280,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="12dp"
             android:text="Nairobi"
             android:textColor="#000000"
             android:textSize="16sp"
             android:layout_alignParentRight="true"
-
+            android:fontFamily="@font/uber_move"
             android:layout_below="@id/mombasa"
             android:layout_marginBottom="10dp"
             android:id="@+id/litein"
@@ -305,6 +308,7 @@
             android:textSize="15sp"
             android:padding="10dp"
             android:id="@+id/rashford"
+            android:fontFamily="@font/uber_move"
             android:textColor="#000000"
             android:layout_height="wrap_content"
             android:text="The Rolls-Royce Cullinan is a full-sized luxury sport utility vehicle (SUV) produced by Rolls-Royce Motor Cars. The Cullinan is the first SUV to be launched by the Rolls-Royce marque, and is also the brand's first all-wheel drive vehicle.">
@@ -329,6 +333,7 @@
             android:layout_marginTop="3dp"
             android:layout_marginEnd="10dp"
             android:text="Call"
+            android:fontFamily="@font/uber_move"
             android:textAllCaps="false"
             android:textColor="#ffffff"
             android:layout_marginLeft="20dp" />
@@ -342,6 +347,7 @@
             android:layout_toRightOf="@id/fai"
             android:layout_marginEnd="20dp"
             android:text="Whatsapp"
+            android:fontFamily="@font/uber_move"
             android:textAllCaps="false"
             android:textColor="#ffffff"
             android:layout_marginRight="20dp" />
@@ -383,6 +389,7 @@
                    android:layout_marginTop="20dp"
                    android:layout_marginLeft="10dp"
                    android:text="Username"
+                   android:fontFamily="@font/uber_move"
                    android:id="@+id/promone"
                    android:textStyle="bold"
                    android:textColor="#000000"
@@ -407,6 +414,7 @@
                    android:layout_marginTop="2dp"
                    android:layout_marginLeft="10dp"
                    android:text="Verified: Yes"
+                   android:fontFamily="@font/uber_move"
                    android:id="@+id/promtwo"
                    android:textColor="#000000"
                    >
@@ -420,6 +428,7 @@
                    android:layout_marginTop="2dp"
                    android:layout_marginLeft="10dp"
                    android:text="Last seen: Recently"
+                   android:fontFamily="@font/uber_move"
                    android:id="@+id/promtree"
                    android:textColor="#000000"
                    >
@@ -444,6 +453,7 @@
                    android:layout_height="wrap_content"
                    android:layout_marginLeft="16dp"
                    android:layout_marginTop="16dp"
+                   android:fontFamily="@font/uber_move"
                    android:layout_marginRight="16dp"
                    android:hint="Comment">
 
@@ -463,6 +473,7 @@
                    android:layout_below="@+id/tilEmailzam"
                    android:layout_marginLeft="20dp"
                    android:layout_marginTop="12dp"
+                   android:fontFamily="@font/uber_move"
                    android:layout_marginRight="20dp"
                    android:textAllCaps="false"
                    android:layout_marginBottom="4dp"
@@ -481,18 +492,7 @@
                    android:layout_marginBottom="10dp">
 
                </androidx.recyclerview.widget.RecyclerView>
-               <TextView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="View all comments"
-                   android:textSize="16sp"
-                   android:id="@+id/meddy"
-                   android:textColor="@color/giddy"
-                   android:layout_below="@id/recycler_view_comments"
-                   android:layout_centerHorizontal="true"
-                   android:layout_marginBottom="10dp">
 
-               </TextView>
            </RelativeLayout>
 
 
@@ -501,6 +501,7 @@
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:text="Post Ad like this"
+               android:fontFamily="@font/uber_move"
                android:layout_centerHorizontal="true"
                android:textSize="16sp"
                android:id="@+id/accnade"
@@ -519,6 +520,7 @@
                android:layout_marginTop="20dp"
                android:layout_marginLeft="10dp"
                android:text="Similar Ads"
+               android:fontFamily="@font/uber_move"
                android:textStyle="bold"
                android:id="@+id/otile"
                android:textSize="14sp">

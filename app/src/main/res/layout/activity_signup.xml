@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="10dp"
-        android:textStyle="bold"
+        android:fontFamily="@font/uber_move_bold"
         android:text="Sign in to your account"
         android:layout_marginLeft="16dp" />
     <TextView
@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="10dp"
-        android:textStyle="bold"
+        android:fontFamily="@font/uber_move_bold"
         android:textColor="#F33B3B"
         android:textSize="16sp"
         android:visibility="gone"
@@ -81,6 +81,7 @@
         android:layout_gravity="end"
         android:layout_marginEnd="8dp"
         android:padding="8dp"
+        android:fontFamily="@font/uber_move"
         android:text="Forgot password?"
         android:layout_marginRight="8dp" />
 
@@ -91,7 +92,7 @@
         android:layout_height="56dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="8dp"
-
+android:fontFamily="@font/uber_move"
         android:layout_marginRight="20dp"
         android:text="Sign in" />
 
@@ -120,6 +121,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:fontFamily="@font/uber_move"
             android:text="Don't have an account?" />
 
         <TextView
@@ -129,6 +131,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
             android:layout_weight="1"
+            android:fontFamily="@font/uber_move"
             android:text="Sign up"
             android:layout_marginLeft="4dp" />
     </LinearLayout>

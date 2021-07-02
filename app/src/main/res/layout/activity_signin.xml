@@ -27,6 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="10dp"
+        android:fontFamily="@font/uber_move_bold"
         android:text="Enter your details"
         android:layout_marginLeft="16dp" />
 
@@ -111,6 +112,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="20dp"
+        android:fontFamily="@font/uber_move"
         android:text="Sign up"
         android:backgroundTint="#000000"
         android:textColor="@android:color/white" />
@@ -130,6 +132,7 @@
             style="@style/AppTheme.Text.14Primary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/uber_move"
             android:text="Already have an account?" />
 
         <TextView
@@ -139,6 +142,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
             android:text="Sign In"
+            android:fontFamily="@font/uber_move"
             android:layout_marginLeft="4dp" />
     </LinearLayout>
     <com.airbnb.lottie.LottieAnimationView
