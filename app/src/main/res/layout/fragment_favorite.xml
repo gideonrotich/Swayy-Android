@@ -29,8 +29,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Favorites"
+
+                    android:fontFamily="@font/uber_move_bold"
                     android:layout_marginLeft="30dp"
-                    android:textStyle="bold"
                     android:id="@+id/rosal"
                     android:maxLines="1"
                     android:maxWidth="250dp"

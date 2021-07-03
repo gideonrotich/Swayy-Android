@@ -45,7 +45,7 @@
                     android:text="Chat settings"
                     android:layout_toRightOf="@id/opt"
                     android:layout_marginLeft="14dp"
-                    android:textStyle="bold"
+                    android:fontFamily="@font/uber_move_bold"
                     android:layout_centerVertical="true"
                     android:layout_marginTop="12dp"
                     android:textColor="@color/giddy"
@@ -79,7 +79,7 @@
                 android:layout_height="wrap_content"
                 android:text="Manage Chats"
                 android:layout_marginTop="20dp"
-                android:textStyle="bold"
+                android:fontFamily="@font/uber_move_bold"
                 android:id="@+id/mbp"
                 android:layout_marginBottom="20dp"
                 android:textColor="#000000"
@@ -99,7 +99,7 @@
                 android:layout_height="wrap_content"
                 android:text="Receive messages"
                 android:layout_marginTop="20dp"
-                android:textStyle="bold"
+                android:fontFamily="@font/uber_move_bold"
                 android:id="@+id/mbpi"
                 android:layout_below="@id/view33"
                 android:layout_marginBottom="20dp"
@@ -135,9 +135,10 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="10dp"
+                android:fontFamily="@font/uber_move"
                 android:textSize="14sp"
                 android:layout_marginBottom="20dp"
-                android:text="Chats help you customers to get in touch with you though messages on Swayy platform\n \n You can turn off this option if you don't want to reply to the messages (Your existed chats stay active">
+                android:text="Chats help you customers to get in touch with you though messages on Swayy platform\n \n You can turn off this option if you don't want to reply to the messages (Your existed chats stay active)">
 
             </TextView>
         </RelativeLayout>

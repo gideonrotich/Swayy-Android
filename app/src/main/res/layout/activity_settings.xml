@@ -35,6 +35,7 @@
                     android:layout_height="wrap_content"
                     android:text="Edit Shop"
                     android:textSize="16sp"
+                    android:fontFamily="@font/uber_move"
                     android:textColor="#000000"
                     android:layout_centerVertical="true"
                     android:layout_toRightOf="@id/optomewk"
@@ -45,6 +46,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Update"
+                    android:fontFamily="@font/uber_move"
                     android:id="@+id/tz"
                     android:textSize="16sp"
                     android:textColor="#000000"
@@ -88,6 +90,7 @@
             android:layout_toRightOf="@id/dpz"
             android:layout_marginLeft="20dp"
             android:text="Change Logo"
+            android:fontFamily="@font/uber_move"
             android:id="@+id/badilisha"
             android:layout_marginTop="30dp"
             android:textColor="#000000"
@@ -102,6 +105,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:textSize="18sp"
+            android:fontFamily="@font/uber_move"
             android:layout_marginTop="30dp"
             android:layout_below="@id/dpz"
             android:text="Shop Details"
@@ -123,6 +127,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etFirstNameonesh"
                 android:layout_width="match_parent"
+                android:fontFamily="@font/uber_move"
                 android:layout_height="wrap_content"
                 android:enabled="true"
                 android:inputType="textPersonName|textCapWords"
@@ -145,6 +150,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etFirstNameoneshweb"
                 android:layout_width="match_parent"
+                android:fontFamily="@font/uber_move"
                 android:layout_height="wrap_content"
                 android:enabled="true"
                 android:inputType="textPersonName|textCapWords"
@@ -169,6 +175,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:enabled="true"
+                android:fontFamily="@font/uber_move"
                 android:inputType="textPersonName|textCapWords"
                 android:textSize="14sp" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -191,6 +198,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:enabled="true"
+                android:fontFamily="@font/uber_move"
                 android:inputType="textPersonName|textCapWords"
                 android:textSize="14sp" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -201,6 +209,7 @@
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:textAllCaps="false"
+            android:fontFamily="@font/uber_move"
             android:layout_below="@+id/tilFirstNameshopdes"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="40dp"

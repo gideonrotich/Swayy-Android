@@ -45,7 +45,7 @@
                     android:text="Feedback"
                     android:layout_toRightOf="@id/opt"
                     android:layout_marginLeft="14dp"
-                    android:textStyle="bold"
+                    android:fontFamily="@font/uber_move_bold"
                     android:layout_centerVertical="true"
                     android:layout_marginTop="12dp"
                     android:textColor="@color/giddy"
@@ -71,6 +71,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etEmailfeed"
+            android:fontFamily="@font/uber_move"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
@@ -89,6 +90,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etEmailfood"
+            android:fontFamily="@font/uber_move"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
@@ -99,6 +101,7 @@
         android:backgroundTint="#4267B2"
         android:layout_width="match_parent"
         android:layout_height="56dp"
+        android:fontFamily="@font/uber_move"
         android:textAllCaps="false"
         android:layout_below="@id/tilEmailfood"
         android:layout_marginLeft="20dp"

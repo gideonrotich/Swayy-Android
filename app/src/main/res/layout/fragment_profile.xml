@@ -27,7 +27,7 @@
                 android:text="Account"
                 android:textSize="22sp"
                 android:layout_marginLeft="30dp"
-                android:textStyle="bold"
+                android:fontFamily="@font/uber_move_bold"
                 android:textColor="#ffffff"
                 android:layout_marginTop="8dp"
                 >
@@ -55,6 +55,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="MY SWAYY ACCOUNT"
+            android:fontFamily="@font/uber_move"
             android:textSize="14sp"
             android:id="@+id/acc"
             android:layout_marginTop="10dp"
@@ -99,6 +100,7 @@
                     android:text="Manage my Account"
                     android:layout_toRightOf="@id/auba"
                     android:id="@+id/smith"
+                    android:fontFamily="@font/uber_move"
                     android:textColor="#000000"
                     android:layout_marginTop="6dp">
 
@@ -140,6 +142,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:text="Chat settings"
+                    android:fontFamily="@font/uber_move"
                     android:layout_toRightOf="@id/carasco"
                     android:id="@+id/dimaria"
                     android:textColor="#000000"
@@ -182,6 +185,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:text="Notifications"
+                    android:fontFamily="@font/uber_move"
                     android:layout_toRightOf="@id/pogba"
                     android:id="@+id/bruno"
                     android:textColor="#000000"
@@ -224,6 +228,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:text="Feedback"
+                    android:fontFamily="@font/uber_move"
                     android:layout_toRightOf="@id/willian"
                     android:id="@+id/saka"
                     android:textColor="#000000"
@@ -251,6 +256,7 @@
             android:layout_height="wrap_content"
             android:text="MY SETTINGS"
             android:textSize="14sp"
+            android:fontFamily="@font/uber_move"
             android:id="@+id/accna"
             android:layout_below="@id/leeds"
             android:layout_marginTop="10dp"
@@ -278,7 +284,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:text="Details"
-
+                    android:fontFamily="@font/uber_move"
                     android:id="@+id/ronaldofree"
                     android:textColor="#000000"
                     android:layout_marginTop="6dp">
@@ -309,7 +315,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:text="Settings"
-
+                    android:fontFamily="@font/uber_move"
                     android:id="@+id/ronaldofreeme"
                     android:textColor="#000000"
                     android:layout_marginTop="6dp">
@@ -339,6 +345,7 @@
             android:layout_centerHorizontal="true"
             android:textSize="16sp"
             android:id="@+id/accnad"
+            android:fontFamily="@font/uber_move"
             android:layout_below="@id/marq"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="14dp"
