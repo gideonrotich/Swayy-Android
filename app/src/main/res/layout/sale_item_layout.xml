@@ -1,101 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#F3F3F3"
     android:layout_height="wrap_content"
-    android:layout_marginRight="4dp"
-    android:layout_marginBottom="2dp"
-    android:layout_marginTop="2dp"
-    android:layout_marginLeft="4dp">
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="160dp"
-        android:layout_height="230dp"
-        android:layout_margin="4dp"
-        app:cardElevation="2dp"
-        >
-
-
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    android:clickable="true"
+    app:rippleColor="@android:color/darker_gray">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="130dp"
+            android:layout_width="160dp"
+            android:layout_height="120dp"
             android:id="@+id/dia"
-            android:scaleType="centerCrop"
-            >
-        </ImageView>
-        <TextView
-            android:layout_width="wrap_content"
+            android:scaleType="centerCrop"/>
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/dia"
-            android:layout_marginTop="132dp"
-            android:layout_marginLeft="6dp"
-            android:layout_marginRight="4dp"
-            android:id="@+id/diatext"
-            android:text="HP refurbished EliteBook -Corei5 - 500GB/4G RAM"
-            android:maxLines="1"
-            android:fontFamily="@font/uber_move_bold"
-            android:textSize="14sp"
-            android:textColor="#000000">
+            android:orientation="vertical"
+            android:padding="8dp">
 
-        </TextView>
-        <ImageView
-            android:layout_width="18dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="4dp"
-            android:layout_marginTop="152dp"
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/diatext"
+                android:text="HP refurbished EliteBook -Corei5 - 500GB/4G RAM"
+                android:maxLines="1"
+                android:textAppearance="?textAppearanceBody2"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/diatextprice"
+                android:textStyle="bold"
+                android:text="Ksh 25,000"
+                android:textAppearance="?textAppearanceBody1"
+                android:textColor="@color/colorAccent"/>
 
-            android:layout_below="@id/diatext"
-            android:id="@+id/messi"
-            android:src="@drawable/ic_baseline_location_on_24">
+            <LinearLayout
+                android:layout_marginTop="@dimen/dimension_8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/messi"
+                    app:tint="@android:color/darker_gray"
+                    android:src="@drawable/ic_icons8_location"/>
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="2dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/diatextlocation"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textAppearance="?textAppearanceCaption"
+                    android:textColor="@android:color/darker_gray"/>
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dimension_8dp"
+                    app:tint="@android:color/darker_gray"
+                    android:id="@+id/ukweli"
+                    android:src="@drawable/ic_icons8_heart"/>
+            </LinearLayout>
 
-        </ImageView>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/diatext"
-            android:layout_marginTop="160dp"
-            android:layout_marginLeft="30dp"
-            android:layout_toRightOf="@id/messi"
-            android:layout_marginRight="4dp"
-            android:id="@+id/diatextlocation"
-            android:text="Nairobi"
-            android:fontFamily="@font/uber_move"
-            android:textSize="13sp"
-            android:textColor="#000000">
+        </LinearLayout>
+    </LinearLayout>
 
-        </TextView>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/diatextlocation"
-            android:layout_marginTop="190dp"
-            android:layout_marginLeft="4dp"
-            android:layout_marginRight="4dp"
-            android:id="@+id/diatextprice"
-            android:fontFamily="@font/uber_move"
-            android:textStyle="bold"
-            android:text="Ksh 25,000"
-            android:textSize="16sp"
-            android:textColor="@color/colorAccent">
-
-        </TextView>
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="23dp"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="6dp"
-            android:layout_marginTop="188dp"
-            android:layout_marginStart="120dp"
-
-            android:id="@+id/ukweli"
-            android:src="@drawable/ic_baseline_star_border_24"
-            android:tint="#6C6A6A"
-            android:layout_marginLeft="100dp">
-
-        </ImageView>
-
-
-    </androidx.cardview.widget.CardView>
-
-</RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

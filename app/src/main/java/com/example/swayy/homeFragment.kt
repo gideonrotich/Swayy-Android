@@ -33,6 +33,8 @@ import com.example.swayy.model.*
 import com.example.swayy.settings.noteActivity
 import com.example.swayy.stores.storeHomeActivity
 import com.example.swayy.stores.storesActivity
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdView
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.google.firebase.auth.FirebaseAuth
@@ -66,6 +68,7 @@ class homeFragment : Fragment() {
     private var notificationAdapter: NotificationAdapter? = null
     private var mNotification:MutableList<Notification>? = null
     private lateinit var firebaseUser: FirebaseUser
+    lateinit var mAdView : AdView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -126,7 +129,7 @@ class homeFragment : Fragment() {
                 override fun onDataChange(snapshot: DataSnapshot) {
                     if (snapshot.exists())
                     {
-                        view?.bay?.visibility = View.VISIBLE
+                        view?.card_badge?.visibility = View.VISIBLE
                         view?.neyo?.text = snapshot.childrenCount.toString()
 
 
@@ -248,44 +251,6 @@ class homeFragment : Fragment() {
             }
 
         }
-
-
-//        view.opttom.setOnClickListener {
-//            val bottomSheetDialog = BottomSheetDialog(
-//                context!!,R.style.BottomSheetDialogTheme
-//            )
-//            val bottomSheetView = LayoutInflater.from(context).inflate(
-//                R.layout.layout_bottom_sheet,null)
-//
-//            val jobsRef = FirebaseDatabase.getInstance().getReference().child("Users").child(firebaseUser.uid)
-//
-//            jobsRef.addValueEventListener(object : ValueEventListener {
-//                override fun onDataChange(p0: DataSnapshot) {
-//
-//                    if (p0.exists())
-//                    {
-//                        val user = p0.getValue<User>(User::class.java)
-//
-//                        val mie = bottomSheetView.findViewById<View>(R.id.mamayaoa)
-//
-//
-//                    }
-//                }
-//
-//                override fun onCancelled(error: DatabaseError) {
-//                    TODO("Not yet implemented")
-//                }
-//            })
-//
-//
-////            bottomSheetView.findViewById<View>(R.id.buttonShare).setOnClickListener {
-////                Toast.makeText(context,"Post will be removed from your feed..", Toast.LENGTH_LONG).show()
-////                bottomSheetDialog.dismiss()
-////            }
-//            bottomSheetDialog.setContentView(bottomSheetView)
-//            bottomSheetDialog.show()
-//
-//        }
         view.five.setOnClickListener {
             if (FirebaseAuth.getInstance().currentUser == null)
             {
@@ -468,6 +433,9 @@ class homeFragment : Fragment() {
             }
         })
 
+        //Ads
+        loadBanners()
+
 
         return view
 
@@ -621,6 +589,16 @@ class homeFragment : Fragment() {
     override fun onPause() {
         shimmerFrameLayout.stopShimmerAnimation()
         super.onPause()
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        loadBanners()
+    }
+
+    fun loadBanners(){
+        val adRequest = AdRequest.Builder().build()
+        view?.adView?.loadAd(adRequest)
     }
 
 

@@ -1,1054 +1,813 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#ffffff"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:background="@android:color/white"
+    android:orientation="vertical"
     tools:context=".homeFragment">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout.main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/mbappe"
-        android:background="@color/giddy"
-        android:elevation="2dp">
+        android:fitsSystemWindows="true"
+        android:background="@android:color/white"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
-        <androidx.appcompat.widget.Toolbar
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/htab_collapse_toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/yes"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@android:color/white"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:titleEnabled="false">
 
-            android:background="@color/giddy"
-            android:layout_marginBottom="6dp">
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                >
-
-
-
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Swayy"
-                android:fontFamily="@font/uber_move"
-                android:textSize="24sp"
-                android:layout_centerHorizontal="true"
-                android:textStyle="bold"
-                android:textColor="#ffffff"
-                android:layout_marginTop="12dp"
-                >
-
-            </TextView>
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                <RelativeLayout
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_alignParentRight="true"
-                    android:src="@drawable/button_background"
-                    android:layout_marginRight="10dp"
-                    android:backgroundTint="#CF1B1B"
-                    android:visibility="gone"
-
-                    android:id="@+id/bay"
-                    android:background="@drawable/button_background"
-                    android:layout_marginTop="8dp">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="42"
-                        android:fontFamily="@font/uber_move"
-                        android:textSize="12sp"
-                        android:layout_centerVertical="true"
-                        android:layout_centerHorizontal="true"
-                        android:id="@+id/neyo"
-                        android:textColor="#ffffff">
-
-                    </TextView>
-
-                </RelativeLayout>
-
-                </RelativeLayout>
-                <ImageView
-                    android:layout_width="40dp"
-                    android:id="@+id/opttomo"
-                    android:layout_height="28dp"
-                    android:layout_marginRight="12dp"
-                    android:layout_alignParentRight="true"
-                    android:src="@drawable/ic_notifications"
-                    android:layout_marginTop="14dp"
-                    android:tint="#ffffff"
-                    android:backgroundTint="@android:color/white">
-                </ImageView>
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="36dp"
-                android:id="@+id/opttom"
-                android:layout_height="36dp"
-                android:layout_alignParentLeft="true"
-                android:src="@drawable/twoo"
-                app:civ_border_width="1dp"
-                app:civ_border_color="#ffffff"
-                android:layout_marginRight="59dp"
-                android:layout_marginTop="11dp"
-                android:backgroundTint="@android:color/white">
-
-            </de.hdodenhof.circleimageview.CircleImageView>
-
-
-
-
-            </RelativeLayout>
-
-
-        </androidx.appcompat.widget.Toolbar>
-
-<RelativeLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_below="@+id/mbappe"
-    android:id="@+id/gredo"
-    >
-
-
-        <androidx.cardview.widget.CardView
-
-            android:layout_width="match_parent"
-            android:layout_height="34dp"
-            android:text=""
-            android:layout_centerHorizontal="true"
-            android:textSize="14sp"
-            android:backgroundTint="#ffffff"
-            android:textAlignment="center"
-            android:background="#ffffff"
-            android:layout_marginLeft="26dp"
-            android:layout_marginRight="26dp"
-            android:layout_marginBottom="6dp"
-            android:layout_marginTop="5dp"
-            android:textColorHint="#000000"
-            android:id="@+id/accnada"
-            android:textAllCaps="false"
-            android:layout_below="@id/marq"
-            ><RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:fontFamily="@font/uber_move"
-                android:text="Product title, keywords, or brand">
-
-            </TextView>
-        </RelativeLayout>
-        </androidx.cardview.widget.CardView>
-
-</RelativeLayout>
-
-    </com.google.android.material.appbar.AppBarLayout>
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scrollbars="none"
-        android:layout_below="@id/mbappe">
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/no"
-
-app:cardBackgroundColor="@color/cardi"
-        android:layout_below="@id/mbappe"
-        android:layout_width="match_parent"
-        android:background="@color/cardi"
-android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-
-        android:layout_height="wrap_content">
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <RelativeLayout
-                android:id="@+id/mazda"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/cardi">
-
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/one"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginRight="6dp"
-                    android:layout_marginBottom="4dp"
-                    android:orientation="vertical">
-
-                    <RelativeLayout
-                        android:layout_width="71dp"
-                        android:layout_height="103dp">
-
-
-                        <ImageView
-                            android:id="@+id/picphone"
-                            android:layout_width="40dp"
-                            android:layout_height="36dp"
-                            android:layout_marginLeft="28dp"
-                            android:layout_marginTop="6dp"
-
-                            android:background="@drawable/ic_harvest" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/picphone"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="4dp"
-                            android:id="@+id/tanonane"
-                            android:fontFamily="@font/uber_move"
-                            android:text="Agricuture and food"
-                            android:textColor="#000000"
-                            android:textSize="12sp">
-
-                        </TextView>
-                    </RelativeLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/two"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_marginLeft="6dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_toRightOf="@id/one"
-                    android:orientation="vertical">
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
-
-                        <ImageView
-                            android:id="@+id/picphoner"
-                            android:layout_width="38dp"
-                            android:layout_height="36dp"
-                            android:layout_marginLeft="28dp"
-                            android:layout_marginTop="6dp"
-
-                            android:background="@drawable/ic_dog" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/picphoner"
-                            android:id="@+id/gs"
-                            android:layout_centerHorizontal="true"
-                            android:layout_marginLeft="32dp"
-                            android:layout_marginTop="4dp"
-                            android:fontFamily="@font/uber_move"
-                            android:text="Animals and pets"
-                            android:textColor="#000000"
-                            android:textSize="12sp">
-
-                        </TextView>
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/three"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginRight="4dp"
-                    android:layout_toRightOf="@id/two"
-                    android:orientation="vertical">
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
-
-                        <ImageView
-                            android:id="@+id/picphoned"
-                            android:layout_width="40dp"
-
-                            android:layout_height="40dp"
-                            android:layout_marginLeft="30dp"
-                            android:layout_marginTop="4dp"
-
-                            android:background="@drawable/ic_mitambo" />
-
-                        <TextView
-                            android:id="@+id/credo"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/picphoned"
-                            android:layout_marginLeft="22dp"
-                            android:layout_marginTop="4dp"
-                            android:text="Babies and kids"
-                            android:fontFamily="@font/uber_move"
-                            android:textColor="#000000"
-                            android:textSize="12sp">
-
-                        </TextView>
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/nobodymazda"
-android:layout_centerHorizontal="true"
-                android:layout_below="@id/mazda"
-                android:layout_width="wrap_content"
-                android:background="@color/cardi"
-
-                android:layout_height="wrap_content">
-                <androidx.cardview.widget.CardView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_marginBottom="4dp"
-                    android:id="@+id/four"
-                    android:layout_marginLeft="6dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginRight="6dp"
-
-                    android:orientation="vertical">
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
-
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="36dp"
-                        android:layout_marginLeft="28dp"
-                        android:layout_marginTop="6dp"
-                        android:id="@+id/picphonebodyy"
-
-                        android:background="@drawable/ic_headphone"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/picphonebodyy"
-                        android:layout_marginLeft="22dp"
-                        android:textSize="12sp"
-                        android:id="@+id/tap"
-                        android:fontFamily="@font/uber_move"
-                        android:layout_marginTop="4dp"
-                        android:text="Electronics"
-                        android:textColor="#000000">
-
-                    </TextView>
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:id="@+id/five"
-                    android:layout_marginLeft="6dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_toRightOf="@id/four"
-
-                    android:orientation="vertical">
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
-
-
-
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="36dp"
-                        android:layout_marginLeft="28dp"
-                        android:layout_marginTop="6dp"
-                        android:id="@+id/picphonerboduu"
-
-                        android:background="@drawable/ic_car"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/picphonerboduu"
-                        android:layout_marginLeft="26dp"
-                        android:textSize="12sp"
-                        android:id="@+id/kimp"
-                        android:text="Vehicles"
-                        android:fontFamily="@font/uber_move"
-                        android:layout_marginTop="4dp"
-                        android:textColor="#000000">
-
-                    </TextView>
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
-                <androidx.cardview.widget.CardView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:id="@+id/six"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginRight="4dp"
-                    android:layout_toRightOf="@id/five"
-
-                    android:orientation="vertical">
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
-
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="36dp"
-                        android:layout_marginLeft="28dp"
-                        android:layout_marginTop="6dp"
-                        android:id="@+id/picphonedbodyu"
-
-                        android:background="@drawable/ic_cosmetics"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/picphonedbodyu"
-                        android:layout_marginLeft="22dp"
-                        android:textSize="12sp"
-                        android:id="@+id/dunda"
-                        android:fontFamily="@font/uber_move"
-                        android:layout_marginTop="4dp"
-                        android:text="Health and beauty"
-                        android:textColor="#000000">
-
-                    </TextView>
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
-
-
-            </RelativeLayout>
-            <RelativeLayout
-                android:id="@+id/nobodywewe"
-android:layout_centerHorizontal="true"
-                android:layout_below="@id/nobodymazda"
-                android:layout_width="wrap_content"
-                android:background="@color/cardi"
-                android:layout_marginBottom="6dp"
-                android:layout_height="wrap_content"
-                >
-                <androidx.cardview.widget.CardView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:id="@+id/seven"
-                    android:layout_marginLeft="6dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginRight="6dp"
-                    android:layout_marginBottom="4dp"
-                    android:orientation="vertical">
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="36dp"
-                        android:layout_marginLeft="28dp"
-                        android:layout_marginTop="6dp"
-                        android:id="@+id/picphonebodyq"
-
-                        android:background="@drawable/ic_architect"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/picphonebodyq"
-                        android:layout_marginLeft="22dp"
-                        android:textSize="12sp"
-                        android:fontFamily="@font/uber_move"
-                        android:id="@+id/checketua"
-                        android:layout_marginTop="4dp"
-                        android:text="Repair and Construction"
-                        android:textColor="#000000">
-
-                    </TextView>
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:id="@+id/eight"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginLeft="6dp"
-                    android:layout_toRightOf="@id/seven"
-                    android:orientation="vertical">
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
-
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="36dp"
-                        android:layout_marginLeft="24dp"
-                        android:layout_marginTop="6dp"
-                        android:id="@+id/picphonerboduw"
-
-                        android:background="@drawable/ic_iphone"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/picphonerboduw"
-                        android:layout_marginLeft="22dp"
-                        android:textSize="12sp"
-                        android:fontFamily="@font/uber_move"
-                        android:id="@+id/nini"
-                        android:text="Mobile phones and tablets"
-                        android:layout_marginTop="4dp"
-                        android:textColor="#000000">
-
-                    </TextView>
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
-                <androidx.cardview.widget.CardView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:id="@+id/tis"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginRight="4dp"
-                    android:layout_toRightOf="@id/eight"
-                    android:orientation="vertical">
-
-                        <RelativeLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
-
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="36dp"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginTop="6dp"
-                        android:id="@+id/picphonedbodyt"
-
-                        android:background="@drawable/ic_mansion"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/picphonedbodyt"
-                        android:layout_marginLeft="26dp"
-                        android:textSize="12sp"
-                        android:id="@+id/kangu"
-                        android:layout_marginTop="4dp"
-                        android:text="property"
-                        android:fontFamily="@font/uber_move"
-                        android:textColor="#000000">
-
-                    </TextView>
-                        </RelativeLayout>
-                </androidx.cardview.widget.CardView>
-
-
-            </RelativeLayout>
-
-<!--            <com.google.android.material.button.MaterialButton-->
-<!--                android:id="@+id/btnSignInfacebook"-->
-<!--                android:backgroundTint="#4267B2"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="56dp"-->
-<!--                android:textAllCaps="false"-->
-<!--                android:layout_below="@id/nobodywewe"-->
-<!--                android:layout_marginLeft="10dp"-->
-<!--                android:layout_marginTop="8dp"-->
-<!--                android:layout_marginRight="10dp"-->
-<!--                android:text="View All Categories" />-->
-
-        </RelativeLayout>
-</androidx.cardview.widget.CardView>
-
-<!--    <RelativeLayout-->
-<!--        android:id="@+id/cullinan"-->
-<!--        android:layout_below="@id/no"-->
-<!--        android:layout_marginTop="6dp"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content">-->
-
-<!--        <ImageView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="146dp"-->
-<!--            android:layout_marginRight="10dp"-->
-<!--            android:layout_marginLeft="10dp"-->
-<!--            android:background="@drawable/nne">-->
-
-<!--        </ImageView>-->
-
-
-<!--    </RelativeLayout>-->
-
-
-<!--    <RelativeLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="6dp"-->
-
-<!--        android:id="@+id/wao"-->
-<!--        android:background="#ffffff"-->
-<!--        android:layout_below="@+id/nobodywao">-->
-
-<!--        <TextView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Trending Deals"-->
-<!--            android:layout_marginLeft="10dp"-->
-<!--            android:layout_marginTop="10dp"-->
-<!--            android:textStyle="bold"-->
-<!--            android:id="@+id/trend"-->
-<!--            android:textColor="#000000"-->
-<!--            android:textSize="14sp">-->
-
-<!--        </TextView>-->
-<!--        <HorizontalScrollView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:scrollbars="none">-->
-<!--            <RelativeLayout-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginTop="30dp"-->
-<!--                >-->
-
-
-
-<!--        <RelativeLayout-->
-<!--            android:layout_width="240dp"-->
-<!--            android:layout_height="wrap_content"-->
-
-<!--            android:layout_marginTop="10dp"-->
-<!--            android:id="@+id/north"-->
-<!--            android:layout_marginLeft="20dp"-->
-<!--            android:layout_marginBottom="10dp"-->
-<!--            android:background="#F3F3F3">-->
-
-<!--            <TextView-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Electronics and Appliances"-->
-<!--                android:layout_marginTop="10dp"-->
-<!--                android:id="@+id/mimi"-->
-<!--                android:textSize="12sp"-->
-<!--                android:textColor="#000000"-->
-<!--                android:layout_marginLeft="10dp"-->
-<!--                >-->
-
-<!--            </TextView>-->
-
-<!--            <ImageView-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="140dp"-->
-<!--                android:background="@drawable/mbele"-->
-<!--                android:layout_below="@id/mimi"-->
-<!--                android:layout_marginTop="10dp"-->
-<!--                android:layout_marginRight="10dp"-->
-<!--                android:layout_marginBottom="10dp"-->
-<!--                android:layout_marginLeft="10dp">-->
-
-<!--            </ImageView>-->
-
-<!--        </RelativeLayout>-->
-<!--        <RelativeLayout-->
-<!--            android:layout_width="240dp"-->
-<!--            android:layout_height="wrap_content"-->
-
-<!--            android:layout_marginTop="10dp"-->
-<!--            android:id="@+id/south"-->
-<!--            android:layout_toRightOf="@id/north"-->
-<!--            android:layout_marginLeft="20dp"-->
-<!--            android:layout_marginBottom="10dp"-->
-<!--            android:background="#F3F3F3">-->
-
-<!--            <TextView-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Phones and Accessories"-->
-<!--                android:layout_marginTop="10dp"-->
-<!--                android:id="@+id/smi"-->
-<!--                android:textSize="12sp"-->
-<!--                android:textColor="#000000"-->
-<!--                android:layout_marginLeft="10dp"-->
-<!--                >-->
-
-<!--            </TextView>-->
-
-<!--            <ImageView-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="140dp"-->
-<!--                android:background="@drawable/simu"-->
-<!--                android:layout_below="@id/smi"-->
-<!--                android:layout_marginTop="10dp"-->
-<!--                android:layout_marginRight="10dp"-->
-<!--                android:layout_marginBottom="10dp"-->
-<!--                android:layout_marginLeft="10dp">-->
-
-<!--            </ImageView>-->
-
-<!--        </RelativeLayout>-->
-<!--                <RelativeLayout-->
-<!--                    android:layout_width="240dp"-->
-<!--                    android:layout_height="wrap_content"-->
-
-<!--                    android:layout_marginTop="10dp"-->
-<!--                    android:id="@+id/west"-->
-<!--                    android:layout_toRightOf="@id/south"-->
-<!--                    android:layout_marginLeft="20dp"-->
-<!--                    android:layout_marginBottom="10dp"-->
-<!--                    android:background="#F3F3F3">-->
-
-<!--                    <TextView-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:text="Computers and Tablets"-->
-<!--                        android:layout_marginTop="10dp"-->
-<!--                        android:id="@+id/smithrowe"-->
-<!--                        android:textSize="12sp"-->
-<!--                        android:textColor="#000000"-->
-<!--                        android:layout_marginLeft="10dp"-->
-<!--                        >-->
-
-<!--                    </TextView>-->
-
-<!--                    <ImageView-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="140dp"-->
-<!--                        android:background="@drawable/flash"-->
-<!--                        android:layout_below="@id/smithrowe"-->
-<!--                        android:layout_marginTop="10dp"-->
-<!--                        android:layout_marginRight="10dp"-->
-<!--                        android:layout_marginBottom="10dp"-->
-<!--                        android:layout_marginLeft="10dp">-->
-
-<!--                    </ImageView>-->
-
-<!--                </RelativeLayout>-->
-<!--                <RelativeLayout-->
-<!--                    android:layout_width="240dp"-->
-<!--                    android:layout_height="wrap_content"-->
-
-<!--                    android:layout_marginTop="10dp"-->
-<!--                    android:id="@+id/east"-->
-<!--                    android:layout_toRightOf="@id/west"-->
-<!--                    android:layout_marginLeft="20dp"-->
-<!--                    android:layout_marginBottom="10dp"-->
-<!--                    android:background="#F3F3F3">-->
-
-<!--                    <TextView-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:text="Bags and Fashion"-->
-<!--                        android:layout_marginTop="10dp"-->
-<!--                        android:id="@+id/smithrowearsenal"-->
-<!--                        android:textSize="12sp"-->
-<!--                        android:textColor="#000000"-->
-<!--                        android:layout_marginLeft="10dp"-->
-<!--                        >-->
-
-<!--                    </TextView>-->
-
-<!--                    <ImageView-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="140dp"-->
-<!--                        android:background="@drawable/begi"-->
-<!--                        android:layout_below="@id/smithrowearsenal"-->
-<!--                        android:layout_marginTop="10dp"-->
-<!--                        android:layout_marginRight="10dp"-->
-<!--                        android:layout_marginBottom="10dp"-->
-<!--                        android:layout_marginLeft="10dp">-->
-
-<!--                    </ImageView>-->
-
-<!--                </RelativeLayout>-->
-<!--            </RelativeLayout>-->
-<!--        </HorizontalScrollView>-->
-
-
-
-<!--    </RelativeLayout>-->
-
-            <com.airbnb.lottie.LottieAnimationView
-                android:layout_width="300dp"
-                android:id="@+id/naneanimationn"
-                android:layout_height="150dp"
-                android:visibility="gone"
-                android:layout_below="@+id/no"
-                android:layout_centerHorizontal="true"
-                app:lottie_fileName="nane.json"
-                android:layout_marginBottom="80dp"
-                app:lottie_loop="true"
-                app:lottie_autoPlay="true">
-
-            </com.airbnb.lottie.LottieAnimationView>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/no"
-                android:id="@+id/trend">
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Trending Deals"
-                android:textSize="18sp"
-                android:layout_marginLeft="16dp"
-                android:id="@+id/trendtext"
-                android:visibility="gone"
-                android:fontFamily="@font/uber_move_bold"
-                android:layout_marginTop="10dp"
-                android:textColor="#000000"
-                >
-
-            </TextView>
-                <ImageView
-                    android:layout_width="30dp"
-                    android:id="@+id/opttomn"
-                    android:layout_height="22dp"
-                    android:layout_toRightOf="@+id/trendtext"
-                    android:src="@drawable/ic_new"
-                    android:visibility="gone"
-                    android:layout_marginTop="10dp"
-
-
-                    >
-
-                </ImageView>
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="14dp"
-                    android:id="@+id/see_all"
-                    android:visibility="gone"
-                    android:layout_marginTop="4dp"
-
-                    >
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="More"
-                        android:fontFamily="@font/uber_move"
-                        android:textSize="14sp"
-                        android:id="@+id/seeall"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="6dp"
-
-                        android:textColor="#5A5959"
-                        >
-
-                    </TextView>
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_toRightOf="@id/seeall"
-                        android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
-                        android:layout_height="30dp"
-                        android:layout_marginTop="4dp"
-                        app:tint="#5A5959">
-
-                    </ImageView>
-
-                </RelativeLayout>
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/recycler_view_trend"
-                    android:layout_width="match_parent"
-                    android:scrollbars="none"
-                    android:layout_below="@+id/trendtext"
-                    android:layout_height="wrap_content"
-                    android:visibility="visible"
-                    android:layout_marginLeft="6dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp">
-
-                </androidx.recyclerview.widget.RecyclerView>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Exclusive Shops"
-                    android:textSize="18sp"
-                    android:layout_marginLeft="16dp"
-                    android:id="@+id/trendtextmojo"
-                    android:layout_below="@+id/recycler_view_trend"
-                    android:visibility="gone"
-                    android:layout_marginTop="10dp"
-                    android:fontFamily="@font/uber_move_bold"
-                    android:textColor="#000000"
-                    >
-
-                </TextView>
-
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="14dp"
-                    android:id="@+id/see_allmojo"
-                    android:visibility="gone"
-                    android:layout_marginTop="4dp"
-                    android:layout_below="@+id/recycler_view_trend"
-
-
-                    >
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="More"
-                        android:textSize="14sp"
-                        android:id="@+id/seeallmojo"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="6dp"
-android:fontFamily="@font/uber_move"
-                        android:textColor="#5A5959"
-                        >
-
-                    </TextView>
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_toRightOf="@id/seeallmojo"
-                        android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
-                        android:layout_height="30dp"
-                        android:layout_marginTop="4dp"
-                        app:tint="#5A5959">
-
-                    </ImageView>
-
-                </RelativeLayout>
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/recycler_view_duka"
-                    android:layout_width="match_parent"
-                    android:scrollbars="none"
-                    android:layout_below="@+id/trendtextmojo"
-                    android:layout_height="wrap_content"
-                    android:visibility="visible"
-                    android:layout_marginLeft="6dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp">
-
-                </androidx.recyclerview.widget.RecyclerView>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Recommended for you"
-                    android:textSize="18sp"
-                    android:fontFamily="@font/uber_move_bold"
-                    android:visibility="gone"
-                    android:layout_marginLeft="16dp"
-                    android:id="@+id/trendtextrec"
-                    android:layout_below="@+id/recycler_view_duka"
-                    android:layout_marginTop="10dp"
-                    android:textColor="#000000"
-                    >
-
-                </TextView>
-                <ImageView
-                    android:layout_width="30dp"
-                    android:id="@+id/opttomsn"
-                    android:visibility="gone"
-                    android:layout_height="18dp"
-                    android:layout_toRightOf="@+id/trendtextrec"
-                    android:src="@drawable/ic_rem"
-                    android:layout_below="@+id/recycler_view_duka"
-                    android:layout_marginTop="12dp"
-
-
-                    >
-
-                </ImageView>
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="14dp"
-                    android:id="@+id/see_allll"
-                    android:visibility="gone"
-                    android:layout_below="@+id/recycler_view_duka"
-                    android:layout_marginTop="4dp"
-
-                    >
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="More"
-                        android:fontFamily="@font/uber_move"
-                        android:textSize="14sp"
-                        android:id="@+id/seealll"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="6dp"
-
-                        android:textColor="#5A5959"
-                        >
-
-                    </TextView>
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_toRightOf="@id/seealll"
-                        android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
-                        android:layout_height="30dp"
-                        android:layout_marginTop="4dp"
-                        app:tint="#5A5959">
-
-                    </ImageView>
-
-                </RelativeLayout>
-            </RelativeLayout>
-
-            <com.facebook.shimmer.ShimmerFrameLayout
-                android:id="@+id/shimmerFrameLayout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_below="@+id/trend"
-                android:visibility="visible"
-                android:layout_marginBottom="59dp"
+                android:fitsSystemWindows="true"
+                android:layout_marginTop="?attr/actionBarSize"
+                app:layout_collapseMode="parallax"
                 android:orientation="vertical">
 
-                <!-- Adding 15 rows of placeholders -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/accnada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:clickable="true"
+                    app:cardBackgroundColor="@color/colorPrimaryLightMore"
+                    app:cardCornerRadius="32dp"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="false"
+                    app:rippleColor="@android:color/darker_gray">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="18dp"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:textColor="@android:color/darker_gray"
+                        android:text="search by product title, keywords, or brand"
+                        android:textAlignment="center" />
+                </com.google.android.material.card.MaterialCardView>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <include layout="@layout/shimmer_placeholder_layout" />
-                    <include layout="@layout/shimmer_placeholder_layout" />
-                    <include layout="@layout/shimmer_placeholder_layout" />
+                    <LinearLayout
+                        android:id="@+id/mazda"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
 
 
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/one"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            app:cardBackgroundColor="@android:color/white"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="2dp"
+                            app:cardUseCompatPadding="true"
+                            app:rippleColor="@android:color/darker_gray">
 
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal"
+                                android:padding="8dp">
+
+                                <ImageView
+                                    android:id="@+id/picphone"
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/ic_icons8_blueberry"
+                                    app:tint="@color/colorPrimary" />
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:id="@+id/tanonane"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/picphone"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="8dp"
+                                    android:text="Agricuture and food"
+                                    android:textAlignment="center"
+                                    android:textAppearance="?textAppearanceCaption">
+
+                                </com.google.android.material.textview.MaterialTextView>
+                            </LinearLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/two"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            app:cardBackgroundColor="@android:color/white"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="2dp"
+                            app:cardUseCompatPadding="true"
+                            app:rippleColor="@android:color/darker_gray">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal"
+                                android:padding="8dp">
+
+                                <ImageView
+                                    android:id="@+id/picphoner"
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/ic_icons8_pets"
+                                    app:tint="@color/colorPrimary" />
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:id="@+id/gs"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="8dp"
+                                    android:text="Animals and pets"
+                                    android:textAlignment="center"
+                                    android:textAppearance="?textAppearanceCaption">
+
+                                </com.google.android.material.textview.MaterialTextView>
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/three"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            app:cardBackgroundColor="@android:color/white"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="2dp"
+                            app:cardUseCompatPadding="true"
+                            app:rippleColor="@android:color/darker_gray">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal"
+                                android:padding="8dp">
+
+
+                                <ImageView
+                                    android:id="@+id/picphoned"
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/ic_icons8_plush"
+                                    app:tint="@color/colorPrimary" />
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:id="@+id/credo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="8dp"
+                                    android:fontFamily="@font/uber_move"
+                                    android:text="Babies and kids"
+                                    android:textAlignment="center"
+                                    android:textAppearance="?textAppearanceCaption">
+
+                                </com.google.android.material.textview.MaterialTextView>
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/four"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            app:cardBackgroundColor="@android:color/white"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="2dp"
+                            app:cardUseCompatPadding="true"
+                            app:rippleColor="@android:color/darker_gray">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal"
+                                android:padding="8dp">
+
+                                <ImageView
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/ic_icons8_electronics" />
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:id="@+id/tap"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/picphone"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="8dp"
+                                    android:text="Electronics"
+                                    android:textAlignment="center"
+                                    android:textAppearance="?textAppearanceCaption">
+
+                                </com.google.android.material.textview.MaterialTextView>
+                            </LinearLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/five"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            app:cardBackgroundColor="@android:color/white"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="2dp"
+                            app:cardUseCompatPadding="true"
+                            app:rippleColor="@android:color/darker_gray">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal"
+                                android:padding="8dp">
+
+                                <ImageView
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/ic_icons8_automotive" />
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:id="@+id/kimp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="8dp"
+                                    android:text="Vehicles"
+                                    android:textAlignment="center"
+                                    android:textAppearance="?textAppearanceCaption">
+
+                                </com.google.android.material.textview.MaterialTextView>
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/six"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            app:cardBackgroundColor="@android:color/white"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="2dp"
+                            app:cardUseCompatPadding="true"
+                            app:rippleColor="@android:color/darker_gray">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal"
+                                android:padding="8dp">
+
+
+                                <ImageView
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/ic_icons8_cleansing" />
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:id="@+id/dunda"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="8dp"
+                                    android:fontFamily="@font/uber_move"
+                                    android:text="Health and beauty"
+                                    android:textAlignment="center"
+                                    android:textAppearance="?textAppearanceCaption">
+
+                                </com.google.android.material.textview.MaterialTextView>
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/seven"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            app:cardBackgroundColor="@android:color/white"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="2dp"
+                            app:cardUseCompatPadding="true"
+                            app:rippleColor="@android:color/darker_gray">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal"
+                                android:padding="8dp">
+
+                                <ImageView
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/ic_icons8_full_tool_storage_box" />
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:id="@+id/checketua"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/picphone"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="8dp"
+                                    android:text="Repair and Construction"
+                                    android:textAlignment="center"
+                                    android:textAppearance="?textAppearanceCaption">
+
+                                </com.google.android.material.textview.MaterialTextView>
+                            </LinearLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/eight"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            app:cardBackgroundColor="@android:color/white"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="2dp"
+                            app:cardUseCompatPadding="true"
+                            app:rippleColor="@android:color/darker_gray">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal"
+                                android:padding="8dp">
+
+                                <ImageView
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/ic_icons8_mobile" />
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:id="@+id/nini"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="8dp"
+                                    android:text="Mobile phones and tablets"
+                                    android:textAlignment="center"
+                                    android:textAppearance="?textAppearanceCaption">
+
+                                </com.google.android.material.textview.MaterialTextView>
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/tis"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            app:cardBackgroundColor="@android:color/white"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="2dp"
+                            app:cardUseCompatPadding="true"
+                            app:rippleColor="@android:color/darker_gray">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal"
+                                android:padding="8dp">
+
+
+                                <ImageView
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/ic_icons8_residence" />
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:id="@+id/kangu"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="8dp"
+                                    android:text="property"
+                                    android:textAlignment="center"
+                                    android:textAppearance="?textAppearanceCaption">
+
+                                </com.google.android.material.textview.MaterialTextView>
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </LinearLayout>
+
+                    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/adView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        ads:adSize="BANNER"
+                        ads:adUnitId="@string/banner" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar.main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:background="@android:color/white"
+                app:layout_collapseMode="pin"
+                android:minHeight="?attr/actionBarSize">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/opttom"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/twoo" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="@string/app_name"
+                        android:textAlignment="center"
+                        android:textAppearance="?textAppearanceHeadline5" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:id="@+id/opttomo"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ic_notifications"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:tint="@color/colorPrimary" />
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/card.badge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:cardBackgroundColor="#CF1B1B"
+                            app:cardCornerRadius="24dp"
+                            app:cardElevation="0dp"
+                            app:cardUseCompatPadding="false"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/neyo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="4sp"
+                                android:text="42"
+                                android:textColor="@android:color/white"
+                                android:textSize="7sp" />
+                        </com.google.android.material.card.MaterialCardView>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
 
                 </LinearLayout>
-            </com.facebook.shimmer.ShimmerFrameLayout>
+            </com.google.android.material.appbar.MaterialToolbar>
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recycler_view_home_t"
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:scrollbars="horizontal"
-                android:layout_below="@+id/trend"
-                android:layout_height="wrap_content"
-                android:visibility="visible"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="6dp"
-                android:layout_marginBottom="10dp">
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
 
-            </androidx.recyclerview.widget.RecyclerView>
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/naneanimationn"
+                    android:layout_width="300dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="80dp"
+                    android:visibility="gone"
+                    app:lottie_autoPlay="true"
+                    app:lottie_fileName="nane.json"
+                    app:lottie_loop="true" />
+
+                <LinearLayout
+                    android:id="@+id/trend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
 
 
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/trendtext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/uber_move_bold"
+                            android:text="Trending Deals"
+                            android:textAppearance="?textAppearanceBody1"
+                            android:visibility="gone" />
 
-        </RelativeLayout>
-    </ScrollView>
+                        <ImageView
+                            android:id="@+id/opttomn"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/dimension_8dp"
+                            android:src="@drawable/ic_new"
+                            android:visibility="gone" />
 
-</RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/see_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:visibility="gone">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/seeall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="More"
+                            android:textAppearance="?textAppearanceCaption"
+                            android:textColor="@color/colorPrimary" />
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/dimension_8dp"
+                            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                            app:tint="#5A5959" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view_trend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimension_8dp"
+                    android:nestedScrollingEnabled="false"
+                    android:scrollbars="none"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/trendtextmojo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Exclusive Shops"
+                        android:textAppearance="?textAppearanceBody1"
+                        android:visibility="gone" />
+
+
+                    <LinearLayout
+                        android:id="@+id/see_allmojo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/seeallmojo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="More"
+                            android:textAppearance="?textAppearanceCaption"
+                            android:textColor="@color/colorPrimary" />
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/dimension_8dp"
+                            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                            app:tint="#5A5959" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view_duka"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:nestedScrollingEnabled="false"
+                    android:scrollbars="none"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimension_8dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/trendtextrec"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Recommended for you"
+                                android:textAppearance="?textAppearanceBody1"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/opttomsn"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/dimension_8dp"
+                                android:src="@drawable/ic_rem"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/see_allll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:visibility="gone">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/seealll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="More"
+                            android:textAppearance="?textAppearanceCaption" />
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/dimension_8dp"
+                            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                            app:tint="#5A5959">
+
+                        </ImageView>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/shimmerFrameLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/trend"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="59dp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <!-- Adding 15 rows of placeholders -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <include layout="@layout/shimmer_placeholder_layout" />
+
+                        <include layout="@layout/shimmer_placeholder_layout" />
+
+                        <include layout="@layout/shimmer_placeholder_layout" />
+
+
+                    </LinearLayout>
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view_home_t"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:nestedScrollingEnabled="false"
+                    android:scrollbars="horizontal"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

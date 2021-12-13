@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/ic_icons8_automotive.xml" value="0.33240740740740743" />
+        <entry key="app/src/main/res/drawable/ic_icons8_blueberry.xml" value="0.33240740740740743" />
+        <entry key="app/src/main/res/drawable/ic_icons8_cleansing.xml" value="0.33240740740740743" />
+        <entry key="app/src/main/res/drawable/ic_icons8_electronics.xml" value="0.33240740740740743" />
+        <entry key="app/src/main/res/drawable/ic_icons8_flax_seeds.xml" value="0.33240740740740743" />
+        <entry key="app/src/main/res/drawable/ic_icons8_full_tool_storage_box.xml" value="0.33240740740740743" />
+        <entry key="app/src/main/res/drawable/ic_icons8_mobile.xml" value="0.33240740740740743" />
+        <entry key="app/src/main/res/drawable/ic_icons8_pets.xml" value="0.33240740740740743" />
+        <entry key="app/src/main/res/drawable/ic_icons8_plush.xml" value="0.33240740740740743" />
+        <entry key="app/src/main/res/drawable/ic_icons8_residence.xml" value="0.33240740740740743" />
+        <entry key="app/src/main/res/layout/activity_chat.xml" value="0.67" />
+        <entry key="app/src/main/res/layout/activity_feedback.xml" value="0.196875" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.3536458333333333" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.196875" />
+        <entry key="app/src/main/res/layout/activity_set.xml" value="0.196875" />
+        <entry key="app/src/main/res/layout/fragment_home2.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/sale_item_layout.xml" value="0.3536458333333333" />
+        <entry key="app/src/main/res/layout/store_item_layout.xml" value="0.3536458333333333" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

@@ -12,6 +12,10 @@
     <string name="impossible_game">Impossible Game</string>
     <string name="retry_button_text">Retry</string>
 
+    <string name="appid">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>
+
     <string-array name="Languages">
         <item>Agriculture and food</item>
         <item>Animals and pets</item>
