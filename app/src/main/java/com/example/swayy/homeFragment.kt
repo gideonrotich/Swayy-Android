@@ -646,7 +646,7 @@ class homeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         loadBanners()
-        loadInterstitial()
+        loadInterstitial()//init loading of interstitial
     }
 
     fun loadBanners(){
