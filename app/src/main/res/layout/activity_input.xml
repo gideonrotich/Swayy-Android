@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".inputActivity">
+    <Spinner
+        android:id="@+id/techtextoneo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:spinnerMode="dropdown"
+        android:textColor="#ffffff"
+        android:background="#F3F3F3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp">
+
+    </Spinner>
+
+    <TextView
+        android:id="@+id/wapioneo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorHint="@android:color/black"
+        android:textSize="16sp"
+        android:visibility="visible"
+        android:layout_below="@+id/techtextoneo"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="20dp">
+
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilInput"
+        style="@style/AppTheme.InputField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+      android:layout_below="@+id/wapioneo"
+        android:layout_marginEnd="16dp"
+        android:hint="Full Name"
+        android:fontFamily="@font/uber_move"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etinput"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:enabled="true"
+            android:inputType="textPersonName|textCapWords"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnUpdateo"
+        style="@style/AppTheme.Button.OutlinedAccent"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@+id/tilInput"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/uber_move"
+        android:text="UPDATE"
+        app:layout_constraintHorizontal_bias="1.0"
+        tools:visibility="visible" />
+
+
+
+</RelativeLayout>

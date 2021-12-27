@@ -1,9 +1,11 @@
 package com.example.swayy
 
+import android.app.Activity
 import android.app.AlertDialog
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -35,6 +37,10 @@ import com.example.swayy.stores.storeHomeActivity
 import com.example.swayy.stores.storesActivity
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.FullScreenContentCallback
+import com.google.android.gms.ads.LoadAdError
+import com.google.android.gms.ads.interstitial.InterstitialAd
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.google.firebase.auth.FirebaseAuth
@@ -69,6 +75,7 @@ class homeFragment : Fragment() {
     private var mNotification:MutableList<Notification>? = null
     private lateinit var firebaseUser: FirebaseUser
     lateinit var mAdView : AdView
+    private var mInterstitialAd: InterstitialAd? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -171,12 +178,35 @@ class homeFragment : Fragment() {
                 activity?.let { it1 -> modalbottomSheetFragment.show(it1.supportFragmentManager,modalbottomSheetFragment.tag) }
 
             }else {
-                firebaseUser = FirebaseAuth.getInstance().currentUser!!
-                val pref = context?.getSharedPreferences("PREFS", Context.MODE_PRIVATE)?.edit()
-                pref?.putString("profileId",view.tanonane.text.toString())
-                pref?.apply()
-                (context as FragmentActivity).supportFragmentManager.beginTransaction()
-                    .replace(R.id.frame_layout,chakulaFragment()).commit()
+
+                if (mInterstitialAd != null) {
+                    // Show the ad
+                    mInterstitialAd!!.show(context as Activity)
+                    mInterstitialAd!!.fullScreenContentCallback =
+                        object : FullScreenContentCallback() {
+                            override fun onAdDismissedFullScreenContent() {
+                                firebaseUser = FirebaseAuth.getInstance().currentUser!!
+                                val pref = context?.getSharedPreferences("PREFS", Context.MODE_PRIVATE)?.edit()
+                                pref?.putString("profileId",view.tanonane.text.toString())
+                                pref?.apply()
+                                (context as FragmentActivity).supportFragmentManager.beginTransaction()
+                                    .replace(R.id.frame_layout,chakulaFragment()).commit()
+                                loadInterstitial()
+                            }
+
+                            override fun onAdShowedFullScreenContent() {
+                                loadInterstitial()
+                                Log.d("TAG", "The ad was shown.")
+                            }
+                        }
+                } else {
+                    firebaseUser = FirebaseAuth.getInstance().currentUser!!
+                    val pref = context?.getSharedPreferences("PREFS", Context.MODE_PRIVATE)?.edit()
+                    pref?.putString("profileId",view.tanonane.text.toString())
+                    pref?.apply()
+                    (context as FragmentActivity).supportFragmentManager.beginTransaction()
+                        .replace(R.id.frame_layout,chakulaFragment()).commit()
+                }
             }
 
         }
@@ -510,6 +540,28 @@ class homeFragment : Fragment() {
     }
 
 
+    private fun loadInterstitial() {
+        val adRequest = AdRequest.Builder().build()
+        activity?.let {
+            InterstitialAd.load(
+                it,
+                resources.getString(R.string.interstitial),
+                adRequest,
+                object : InterstitialAdLoadCallback() {
+                    override fun onAdLoaded(interstitialAd: InterstitialAd) {
+                        super.onAdLoaded(interstitialAd)
+                        mInterstitialAd = interstitialAd
+                    }
+
+                    override fun onAdFailedToLoad(loadAdError: LoadAdError) {
+                        super.onAdFailedToLoad(loadAdError)
+                        mInterstitialAd = null
+                    }
+                })
+        }
+    }
+
+
     private fun retrieveTrend() {
         val jobsReff = FirebaseDatabase.getInstance().getReference("Babies and kids").child("Babies and kids accessories")
         jobsReff.addValueEventListener(object : ValueEventListener {
@@ -594,6 +646,7 @@ class homeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         loadBanners()
+        loadInterstitial()
     }
 
     fun loadBanners(){

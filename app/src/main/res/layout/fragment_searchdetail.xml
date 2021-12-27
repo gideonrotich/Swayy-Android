@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:id="@+id/nyamazaaa"
+    tools:context=".categories.searchdetailFragment">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mbappeaa"
+            android:elevation="2dp">
+
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:background="#ffffff">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/yesaa">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:id="@+id/optaa"
+                        android:layout_height="22dp"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/ic_baseline_arrow_back_24"
+                        android:layout_marginLeft="4dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="14dp"
+                        android:backgroundTint="#ffffff"
+                        app:tint="#000000">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Item details"
+                        android:layout_toRightOf="@id/optaa"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/uber_move_bold"
+                        android:id="@+id/rosaaa"
+                        android:maxLines="1"
+                        android:maxWidth="210dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="12dp"
+                        android:textColor="@color/giddy"
+                        android:textSize="18sp">
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:id="@+id/tumaaa"
+                        android:layout_marginRight="14dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="12dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_baseline_share_24"
+                        app:tint="#000000">
+
+                    </ImageView>
+
+                </RelativeLayout>
+
+
+
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/minanyangoaa"
+            android:visibility="gone"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:textColor="#000000"
+                android:layout_centerHorizontal="true"
+                android:textSize="16sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_above="@id/bahatiaa"
+                android:text="You need to login first so as to see the item details">
+
+            </TextView>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/bahatiaa"
+                android:backgroundTint="#4267B2"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:textAllCaps="false"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="20dp"
+                android:text="Sign in" />
+
+            <LinearLayout
+                android:id="@+id/llSignUpaa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/bahatiaa"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/textView26aa"
+                    style="@style/AppTheme.Text.14Primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Don't have an account?" />
+
+                <TextView
+                    android:id="@+id/textView28aa"
+                    style="@style/AppTheme.Text.14AccentBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_weight="1"
+                    android:text="Sign up"
+                    android:layout_marginLeft="4dp" />
+            </LinearLayout>
+        </RelativeLayout>
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mbappeaa"
+            android:id="@+id/minaaa"
+            android:visibility="visible"
+            android:scrollbars="none">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:id="@+id/cavaniaa"
+                    >
+                    <!--        <com.denzcoskun.imageslider.ImageSlider-->
+                    <!--            android:id="@+id/image_slider"-->
+                    <!--            android:layout_width="wrap_content"-->
+                    <!--            android:layout_height="400dp"-->
+                    <!--            app:iss_auto_cycle="true"-->
+                    <!--            app:iss_period="4000"-->
+                    <!--            app:iss_delay="0"/>-->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/mawazoaa"
+                        android:scaleType="centerCrop"
+                        android:background="#ffffff">
+
+                    </ImageView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/pogbaboomaa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cavaniaa"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:id="@+id/kisumuaa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/uber_move_bold"
+                        android:maxLines="1"
+                        android:textStyle="bold"
+                        android:text="16GB Memory SD High Speed Card,Get Earphone Gift"
+                        android:textColor="#000000"
+                        android:textSize="16sp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/kiamunyiaa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/kisumuaa"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/uber_move"
+                        android:text="Condition: New "
+                        android:textColor="#000000"
+                        android:textSize="16sp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/likesaa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/kisumuaa"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginRight="40dp"
+                        android:fontFamily="@font/uber_move"
+                        android:text=""
+                        android:textColor="@android:color/black">
+
+                    </TextView>
+
+
+                    <ImageView
+                        android:id="@+id/pichalikeaa"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_below="@+id/kisumuaa"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/likesaa"
+                        android:src="@drawable/ic_likeone">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/mombasaaa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/kiamunyiaa"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/uber_move"
+                        android:text="Type : Annov"
+                        android:textColor="#000000"
+                        android:textSize="16sp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/nakuruaa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mombasaaa"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/uber_move_bold"
+                        android:text="KSH 399"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp">
+
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/messiaa"
+                        android:layout_width="18dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/mombasaaa"
+
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_toLeftOf="@id/liteinaa"
+                        android:src="@drawable/ic_baseline_location_on_24">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/liteinaa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mombasaaa"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/uber_move"
+                        android:text="Nairobi"
+                        android:textColor="#000000"
+                        android:textSize="16sp">
+
+                    </TextView>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mmjaa"
+                    android:background="#ffffff"
+                    android:id="@+id/mataaa"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textSize="15sp"
+                        android:padding="10dp"
+                        android:id="@+id/rashfordaa"
+                        android:fontFamily="@font/uber_move"
+                        android:textColor="#000000"
+                        android:layout_height="wrap_content"
+                        android:text="The Rolls-Royce Cullinan is a full-sized luxury sport utility vehicle (SUV) produced by Rolls-Royce Motor Cars. The Cullinan is the first SUV to be launched by the Rolls-Royce marque, and is also the brand's first all-wheel drive vehicle.">
+
+                    </TextView>
+
+                </RelativeLayout>
+                <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/adViewj"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pogbaboomaa"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="@string/banner" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/mmjaa"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/adViewj"
+                    android:background="#F3F3F3">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/faiaa"
+                        android:layout_width="160dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginEnd="10dp"
+                        android:backgroundTint="#000000"
+                        android:fontFamily="@font/uber_move"
+                        android:text="Call"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        app:cornerRadius="8dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/faidaa"
+                        android:layout_width="160dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@id/faiaa"
+                        android:backgroundTint="#3DA62A"
+                        android:fontFamily="@font/uber_move"
+                        android:text="Whatsapp"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        app:cornerRadius="8dp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerview_newmessageaa"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginTop="12dp"
+                        android:visibility="gone"
+                        android:layout_below="@+id/faidaa">
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </RelativeLayout>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/kindaa"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@id/mataaa"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#ffffff">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/promaa"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/onee"
+                        android:layout_marginTop="20dp">
+
+                    </de.hdodenhof.circleimageview.CircleImageView>
+
+                    <TextView
+                        android:id="@+id/promoneaa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toRightOf="@id/promaa"
+                        android:fontFamily="@font/uber_move"
+                        android:text="Username"
+                        android:textColor="#000000"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="16dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="21dp"
+                        android:layout_toRightOf="@id/promoneaa"
+                        android:src="@drawable/ic_check">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/promtwoaa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/promoneaa"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@id/promaa"
+                        android:fontFamily="@font/uber_move"
+                        android:text="Verified: Yes"
+                        android:textColor="#000000">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/promtreeaa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/promtwoaa"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@id/promaa"
+                        android:fontFamily="@font/uber_move"
+                        android:text="Last seen: Recently"
+                        android:textColor="#000000">
+
+                    </TextView>
+</RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    app:cardCornerRadius="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/kindaa"
+                    android:id="@+id/zamaniaa"
+                    android:background="#ffffff"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilEmailzamaa"
+                        style="@style/AppTheme.InputField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/uber_move"
+                        android:layout_marginRight="16dp"
+                        android:hint="Comment">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etEmailzamaa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textEmailAddress"
+                            android:textSize="14sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnSignInzamaa"
+                        android:backgroundTint="@color/giddy"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_below="@+id/tilEmailzamaa"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/uber_move"
+                        android:layout_marginRight="20dp"
+                        android:textAllCaps="false"
+                        android:layout_marginBottom="4dp"
+                        android:text="Post Comment"
+                        />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_view_commentsaa"
+                        android:layout_width="match_parent"
+                        android:scrollbars="none"
+
+                        android:layout_below="@id/btnSignInzamaa"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/AppTheme.Button.OutlinedAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Post Ad like this"
+                    android:fontFamily="@font/uber_move"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="16sp"
+                    android:id="@+id/accnadeaa"
+                    android:textAllCaps="false"
+                    android:layout_below="@id/zamaniaa"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    >
+
+                </com.google.android.material.button.MaterialButton>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/accnadeaa"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Similar Ads"
+                    android:fontFamily="@font/uber_move"
+                    android:textStyle="bold"
+                    android:id="@+id/otileaa"
+                    android:textSize="14sp">
+
+                </TextView>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view_mlaa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/otileaa"
+                    android:layout_marginTop="10dp"
+                    android:visibility="visible"
+
+                    android:layout_marginBottom="80dp">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+
+
+</RelativeLayout>

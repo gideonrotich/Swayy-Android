@@ -106,7 +106,7 @@
                                     android:layout_below="@id/picphone"
                                     android:layout_gravity="center"
                                     android:layout_marginLeft="8dp"
-                                    android:text="Agricuture and food"
+                                    android:text="Agriculture and food"
                                     android:textAlignment="center"
                                     android:textAppearance="?textAppearanceCaption">
 
